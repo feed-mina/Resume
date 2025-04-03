@@ -51,7 +51,7 @@ Portfolio URL: https://github.com/feed-mina/Diary
 ---
 
 # 📘 주요 프로젝트 ① Diary
-## 📍 URL##: https://justsaying.co.kr  
+## 📍 URL: https://justsaying.co.kr  
 ## 🔧 기술 스택##: Vue, Spring Boot, JWT, MySQL, EC2, S3
 
 - 감정 기반 다이어리 웹앱 (감정지수 선택 + 해시태그 입력)
@@ -75,7 +75,7 @@ Portfolio URL: https://github.com/feed-mina/Diary
 - Azure Face Recognition + 이미지 처리
 - 전시형 결과물 구현 (터치디자이너 시각화)
 - 데이터 수집, 이미지 전처리, API 구성 전 과정 담당
-- 티맥스티베로, 단국대, 클라우드연구조합 공모전 ##최우수상 수상##
+- 티맥스티베로, 단국대, 클라우드연구조합 공모전 최우수상 수상 
 
 ## 📸 이미지:
 - PPT 요약 (데이터셋 설명, 모델 비교, 결과 시각화)
