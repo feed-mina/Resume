@@ -1,6 +1,6 @@
 
 # 💼 표지
-## 지원 포트폴리오##  
+## 지원 포트폴리오 
 지원자: 민예린  
 지원 직무: Software Engineer (백엔드 중심 풀스택)  
 GitHub: https://github.com/feed-mina  
@@ -26,7 +26,7 @@ Portfolio URL: https://github.com/feed-mina/Diary
 - 스타트업 PM 및 콘텐츠 마케터 경험을 살려 기획-디자인-개발을 연결하는 개발자
 - 사용자 입장에서 문제를 정의하고 기술로 해결책을 제시하는 데 집중
 
-##장점:##
+## 장점: 
 - 꾸준한 개발일지 작성 습관 📝
 - 기획부터 배포까지 주도한 프로젝트 다수 ⚙️
 - 커뮤니케이션 강점 및 다양한 직군과의 협업 경험 💬
@@ -42,11 +42,11 @@ Portfolio URL: https://github.com/feed-mina/Diary
 ---
 
 # 🛠 기술 스택
-- ##Frontend##: Vue.js, React.js, HTML/CSS, JavaScript
-- ##Backend##: Java(Spring Boot), JWT, REST API
-- ##Database##: MySQL, DBeaver
-- ##Infra##: AWS S3, Firebase, EC2, Nginx
-- ##Tools##: Git/GitHub, Figma, Notion, Slack, Jira
+- ## Frontend : Vue.js, React.js, HTML/CSS, JavaScript
+- ## Backend : Java(Spring Boot), JWT, REST API
+- ## Database : MySQL, DBeaver
+- ## Infra : AWS S3, Firebase, EC2, Nginx
+- ## Tools : Git/GitHub, Figma, Notion, Slack, Jira
 
 ---
 
@@ -61,7 +61,7 @@ Portfolio URL: https://github.com/feed-mina/Diary
 - 관리자 페이지를 통한 일기 모니터링 및 diaryStatus 필터링 기능 구현
 - 배포: 프론트 S3 + 백엔드 EC2 + Nginx 리버스 프록시 구성
 
-## 📸 이미지:##
+## 📸 이미지: 
 - 감정입력 화면
 - 일기 작성 및 리스트
 - 회원탈퇴 & 튜토리얼 기능 포함
@@ -95,9 +95,9 @@ Portfolio URL: https://github.com/feed-mina/Diary
 ---
 
 # 🏆 공모전 수상
-- ##2022 캠퍼스 SW 아카데미 TABA 1기##
+- ## 2022 캠퍼스 SW 아카데미 TABA 1기 
 - 주관: 티맥스티베로, 단국대학교, 한국클라우드컴퓨팅연구조합
-- 수상: ##프로젝트 최우수상 (2022.12.23)##
+- ### 수상:  프로젝트 최우수상 (2022.12.23) 
 - 역할: 데이터 모델 설계, 백엔드 구성, 발표 PT
 
 ---
@@ -106,7 +106,7 @@ Portfolio URL: https://github.com/feed-mina/Diary
 > “문과 출신도 실무형 개발자가 될 수 있다는 것을 보여주고 싶습니다.”
 
 📌 GitHub 대표 포트폴리오:  
-##Diary## 👉 https://github.com/feed-mina/Diary
+## Diary 👉 https://github.com/feed-mina/Diary
 
 📎 전체 GitHub 주소 QR코드 및 프로젝트 이미지 추가 예정
 
