@@ -136,7 +136,7 @@ React + Spring Boot + AI 모델 서버를 통합적으로 연동하며 풀스택
 - **성과**:
   - 반응형 웹 미처 고려하지 못한 문제 해결 경험
   - 기획-디자인-개발 전체를 리딩하며 팀 1등 수상
-- **GitHub**: [일당백 Repository](https://github.com/feedmina/hardcarry2_team3)
+- **GitHub**: [일당백 Repository](https://github.com/feed-mina/hardcarry2_team3)
 - **📸 주요 화면 (예정)**:
   <img src="./assets/ildangbaek_ui.png" alt="일당백 UI" width="70%" />
 
