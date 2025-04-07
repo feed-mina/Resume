@@ -106,9 +106,18 @@ React + Spring Boot + AI 모델 서버를 통합적으로 연동하며 풀스택
 - **GitHub**: [MIMO Repository](https://github.com/feed-mina/MIMO)
 ### 🖼 대표 화면
 
-| 메인페이지 | 튜토리얼 | 상품 상세 | 카메라 시뮬레이션 | 리뷰 작성 |
-|------------|----------|-----------|------------------|------------|
-| ![](./images/mimo-ui-main.png) | ![](./images/mimo-ui-login.png) | ![](./images/mimo-ui-cart.png) | ![](./images/mimo-ui-shot.png) | ![](./images/mimo-ui-review.png) |
+### 🖼 대표 화면 (1/2)
+
+| 메인페이지 | 상품 상세 | 리뷰 작성 |
+|------------|-----------|------------|
+| <img src="./images/mimo-ui-main.png" width="160"/> | <img src="./images/mimo-ui-cart.png" width="160"/> | <img src="./images/mimo-ui-review.png" width="160"/> |
+
+### 🖼 대표 화면 (2/2)
+
+| 튜토리얼 | 카메라 시뮬레이션 |
+|----------|------------------|
+| <img src="./images/mimo-ui-login.png" width="160"/> | <img src="./images/mimo-ui-shot.png" width="160"/> |
+
 
 
 
