@@ -21,13 +21,16 @@
   - 프론트-백엔드-인프라 전반을 직접 설계 및 운영
 - **GitHub**: [Diary Repository](https://github.com/feed-mina/Diary)
 - **배포 URL**: [https://justsaying.co.kr](https://justsaying.co.kr)
-
 ### 🖼 대표 화면
 
+| 메인페이지 | 튜토리얼 | 감정 일기 작성 |
+|------------|----------|----------------|
+| <img src="./images/main.png" width="160"/> | <img src="./images/tutorial.png" width="160"/> | <img src="./images/0004.png" width="160"/> |
 
-| 메인페이지 | 튜토리얼 | 감정 일기 작성 | 일기 리스트 | 상세 보기 |
-|------------|----------------|--------------|------------|
-| <img src="./images/main.png" width="160"/> | <img src="./images/tutorial.png" width="160"/> | <img src="./images/0004.png" width="160"/> | <img src="./images/0005.png" width="160"/> | <img src="./images/0010.png" width="160"/> |
+| 일기 리스트 | 상세 보기 |  |
+|-------------|-----------|--|
+| <img src="./images/0005.png" width="160"/> | <img src="./images/0010.png" width="160"/> |  |
+
   
 > “기록된 감정이 쌓이면, 나는 조금 더 나를 이해할 수 있을까?”  
 > 감정과 일상을 기록하는 웹앱을 만들고 싶어서 시작했어요.  
