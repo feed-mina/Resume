@@ -77,7 +77,7 @@
 - **성과**:
   - **TABA 공모전 최우수상 수상** 🏆
   - 이미지 분류 결과를 시각화하여 직관적으로 설명
-- **자료**: `프로젝트 발표 PPT` 참고 ([TABA_Presentation.pdf](https://github.com/feed-mina/Resume/blob/main/TABA_Presentation.pdf))
+- **발표 자료**: `프로젝트 발표 PPT` 참고 ([TABA_Presentation.pdf](https://github.com/feed-mina/Resume/blob/main/TABA_Presentation.pdf))
 - **GitHub**: [TABA1 Repository](https://github.com/feed-mina/TABA1-_CCCR_-)
 
 > "AI를 통해 이미지 속 세상을 이해할 수 있을까?"
@@ -105,6 +105,7 @@
 소셜 로그인(OAuth), 장바구니, 리뷰 작성 등 전자상거래 기능과 함께,  
 React + Spring Boot + AI 모델 서버를 통합적으로 연동하며 풀스택 개발 실무를 경험했습니다.  
 구글 클라우드에 배포하고 Firebase와 연동하며 팀 프로젝트 협업을 마무리했습니다.
+- **발표 자료 PDF**: [MIMO 발표자료 보기](https://github.com/feed-mina/MIMO/raw/update-readme/2022_MIMO_PPT_final.pdf)
 
 - **GitHub**: [MIMO Repository](https://github.com/feed-mina/MIMO)
 ### 🖼 대표 화면
