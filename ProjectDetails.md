@@ -24,10 +24,10 @@
 
 ### 🖼 대표 화면
 
+
 | 메인페이지 | 튜토리얼 | 감정 일기 작성 | 일기 리스트 | 상세 보기 |
 |------------|----------------|--------------|------------|
-| ![](./images/main.png) | ![](./images/tutorial.png) | ![](./images/0004.png) | ![](./images/0005.png) | ![](./images/0010.png) |
-
+| <img src="./images/main.png" width="160"/> | <img src="./images/tutorial.png" width="160"/> | <img src="./images/0004.png" width="160"/> | <img src="./images/0005.png" width="160"/> | <img src="./images/0010.png" width="160"/> |
   
 > “기록된 감정이 쌓이면, 나는 조금 더 나를 이해할 수 있을까?”  
 > 감정과 일상을 기록하는 웹앱을 만들고 싶어서 시작했어요.  
