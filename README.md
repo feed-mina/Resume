@@ -155,9 +155,9 @@ Vue + Spring Boot 기반의 실전 프로젝트를 통해 관리자 시스템, �
 
 - 커뮤니티형 이벤트 플랫폼  
 - 다양한 인터랙션 기능 (댓글, 게임, 심리테스트 등)  
-- 사용자 참여 유도 + 1등 수상  
+- 사용자 참여 유도 + 1등 수상
 
-[🔗 GitHub 보기](https://github.com/feedmina/hardcarry2_team3)
+ [🔗 GitHub 보기](https://github.com/feed-mina/hardcarry2_team3)
 
 ---
 
