@@ -114,9 +114,18 @@ Vue + Spring Boot 기반의 실전 프로젝트를 통해 관리자 시스템, �
 - S3 + EC2 + Nginx 인프라 구성 및 자동화  
 
 [🔗 GitHub 보기](https://github.com/feed-mina/Diary)
+ +
+StopWatch  
+**🔧 기술 스택**: Electron, Vue  
+
+- 데스크탑 타이머 앱  
+- 25분 집중, 5분 휴식 자동 루프  
+- 라이트/다크 모드  
+
+[🔗 GitHub 보기](https://github.com/feed-mina/StopWatch)
 
 ---
-### 📘 Yogiyo Crawling API  
+### ② 📘 Yogiyo Crawling API  
 **기간**: 2025.04  
 **기술 스택**: Python, Flask, BeautifulSoup  
 **역할**: 데이터 크롤링 서버 개발, API 요청 흐름 구성 및 테스트  
@@ -133,24 +142,13 @@ Vue + Spring Boot 기반의 실전 프로젝트를 통해 관리자 시스템, �
 
 ---
 
-## ② TABA1-CCCR  
+## ③  TABA1-CCCR  
 **🔧 기술 스택**: Python, Flask, AI 모델  
 
 - AI 이미지넷 분류 예측 시스템  
 - 공모전 **최우수상 수상**  
 
 [🔗 GitHub 보기](https://github.com/feed-mina/TABA1-_CCCR_-)
-
----
-
-## ③ StopWatch  
-**🔧 기술 스택**: Electron, Vue  
-
-- 데스크탑 타이머 앱  
-- 25분 집중, 5분 휴식 자동 루프  
-- 라이트/다크 모드  
-
-[🔗 GitHub 보기](https://github.com/feed-mina/StopWatch)
 
 ---
 
