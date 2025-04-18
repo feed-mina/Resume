@@ -9,6 +9,16 @@
 
 ---
 
+## 🍕Yogiyo Crawling API
+- 기간: 2025.04
+- 기술 스택: Python, Flask, BeautifulSoup
+- 링크: [GitHub Repository](https://github.com/feed-mina/yogiyo-crawling-api)
+- 비공식 요기요 데이터를 수집하는 Flask 기반 API 서버
+- 음식점, 메뉴, 리뷰 등 정보를 수집해 JSON 형태로 제공
+- 데이터 분석 또는 추천 시스템의 기반으로 확장 가능한 구조 설계
+- 토큰 발급 → 가게 확인 → 메뉴 → 리뷰 순으로 요청 흐름 구성
+
+
 ## 📘 Diary (감정 다이어리 웹앱)
 - **기간**: 2024.12 ~ 2025.02
 - **기술 스택**: Vue, Spring Boot, MySQL, JWT, AWS EC2, S3, Nginx
