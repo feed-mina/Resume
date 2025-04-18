@@ -116,6 +116,22 @@ Vue + Spring Boot 기반의 실전 프로젝트를 통해 관리자 시스템, �
 [🔗 GitHub 보기](https://github.com/feed-mina/Diary)
 
 ---
+### 📘 Yogiyo Crawling API  
+**기간**: 2025.04  
+**기술 스택**: Python, Flask, BeautifulSoup  
+**역할**: 데이터 크롤링 서버 개발, API 요청 흐름 구성 및 테스트  
+**설명**:  
+- 비공식 요기요 API를 분석해 음식점, 메뉴, 리뷰 정보를 수집하는 REST API 구축  
+- Flask 서버 구성 및 Postman 테스트를 통해 전체 흐름 시각화  
+- 실제 배달앱 데이터 수집을 위한 경량 API 서버 구조 설계  
+
+**성과**:  
+- 비공식 경로 분석 및 요청 파라미터 추적을 통해 실서비스 데이터 수집 성공  
+- 추후 데이터 분석 및 추천 시스템 기반 프로젝트로 확장 가능한 구조로 설계  
+
+🔗 [GitHub Repository](https://github.com/feed-mina/yogiyo-crawling-api)
+
+---
 
 ## ② TABA1-CCCR  
 **🔧 기술 스택**: Python, Flask, AI 모델  
