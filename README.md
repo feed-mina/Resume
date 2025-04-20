@@ -178,7 +178,8 @@ StopWatch
 # 🏆 수상 및 자격증
 
 - 🥇 **TABA AI 공모전 최우수상** (2022)  
-- 🧾 **정보처리기사 필기 합격** (실기 준비 중)  
+- 🧾 **정보처리기사 필기 합격 / 2025년 실기 시험 응시 완료 (합격 발표 대기 중)
+
 - 🛠 Microsoft Azure Fundamentals, Google GAIQ, MOS Master  
 
 ---
