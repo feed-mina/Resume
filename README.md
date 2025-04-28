@@ -97,10 +97,11 @@
 
 # 🎓 교육 이력
 
-| 과정명 | 기간 | 내용 | 교육시간 |
-|--------|------|------|
-| TABA SW 아카데미 | 2022.08 ~ 2022.12 | AI 이미지 예측 공모전 최우수상, Spring/MySQL | 640시간 |
-| IoT/BigData/AI 과정 | 2021.08 ~ 2022.02 | Java 기반 CRUD, Python 데이터 처리 | 960시간 |
+| 과정명              | 기간                | 내용                                 | 교육시간 |
+|---------------------|---------------------|------------------------------------|---------|
+| TABA SW 아카데미     | 2022.08 ~ 2022.12    | AI 이미지 예측 공모전 최우수상, Spring/MySQL | 640시간 |
+| IoT/BigData/AI 과정 | 2021.08 ~ 2022.02    | Java 기반 CRUD, Python 데이터 처리  | 960시간 |
+
 
 ---
 
@@ -113,6 +114,7 @@
 ## ① Vue, Spring Boot, AWS 기반 웹 개발 및 FastAPI 기능
 **📍 URL**: [https://justsaying.co.kr](https://justsaying.co.kr)  
 **🔧 기술 스택**: Vue.js, Spring Boot, FastAPI, AWS EC2/S3/CloudFront, Nginx, HuggingFace API
+
 **기간**: 2025.03
 
 - Vue3(화면)와 Spring Boot(서버) 기반 일기장 CRUD 기능 개발 및 JWT 인증, Kakao OAuth 소셜 로그인 기능 구현했습니다.
@@ -133,7 +135,9 @@
 
 **URL**: [https://mindevprofile.kr](https://mindevprofile.kr)  
 **기술 스택**: Django, Vue.js, Redis, PostgreSQL, AWS EC2/Nginx, OpenAI GPT-3.5 API, 요기요 클론 API
+
 **기간**: 2025.04  
+
 - Django 기반으로 사용자의 자유 입력 또는 심리 테스트 결과를 수집해 OpenAI GPT API로 감성 기반 음식 카테고리를 추천하고, 요기요 클론 API 데이터를 연동하여 실제 음식점을 추천하는 서비스를 구축했습니다.
 - Redis 캐시를 활용해 GPT 결과 및 음식점 리스트 제공 속도를 최적화하고, PostgreSQL을 기반으로 사용자 요청 및 추천 결과를 안정적으로 저장했습니다.
 - Django 서버를 ASGI(Uvicorn) 기반 비동기 환경으로 운영하면서 API 응답 지연을 최소화하고, 운영 중 발생한 Redis 연결 오류, 메모리 부족, CORS 정책 이슈를 직접 해결해 안정적인 서버 운영 역량을 강화했습니다.
@@ -148,13 +152,16 @@
 ---
 
 ## ③  TABA1-CCCR  
+
 **🔧 기술 스택**: Python, Flask, AI 모델  
 
 - PyTorch를 사용해 CNN 기반 이미지 분류 모델을 설계하고, ImageNet 데이터셋을 전처리하여 학습 최적화를 진행했습니다.
 - GPU 메모리 한계 및 데이터 불균형 문제를 해결하기 위해 Batch Size 조정, 데이터 증강(Augmentation), EarlyStopping 기법을 적극 적용했습니다.
 - 단순 정확도뿐만 아니라 Validation Loss와 Confusion Matrix를 분석해 실제 데이터에서도 안정적인 모델 성능을 검증했습니다.
 - 최종적으로 90% 이상의 정확도를 달성하며, 해당 모델로 TABA1-CCCR AI 공모전에서 최우수상을 수상했습니다.
+
 **성과:**
+
 - 학습 환경 최적화 및 모델 성능 향상을 위한 반복 실험과 개선 경험 확보
 - AI 모델 개발 전 과정(데이터 전처리, 학습, 검증, 튜닝) 직접 수행
 - 공모전 **최우수상 수상**  을 통해 문제 해결력과 꾸준함을 객관적으로 검증
@@ -164,28 +171,35 @@
 ---
 
 ## ④ MIMO  
+
 **기술 스택**: React.js, HTML/CSS, JavaScript, Figma, Google Cloud, Firebase
+
 **🧑‍🤝‍🧑 팀 구성**: 7인 (프론트 2, 백엔드 2, 모델링 3)  
 
 - 코로나로 인한 오프라인 테스트 한계를 극복하기 위해 React 기반 가상 메이크업 시뮬레이션 웹앱을 개발했습니다. 웹캠으로 얼굴을 촬영한 후 립스틱 색상을 적용하는 기능과, AI 기반 얼굴 인식 및 립 컬러 매핑 기능을 구현했습니다.
 - OAuth2를 활용한 소셜 로그인, 상품 상세 정보 제공, 장바구니 및 리뷰 작성 기능을 통해 쇼핑몰 연동 기능까지 확장했습니다.
 
 **성과:**
+
 - React 기반 UI/UX 설계 및 클래스형 컴포넌트화 개발 경험
 - 프론트엔드, 백엔드, AI 시스템 연동을 통한 실전 프로젝트 수행
 - 사용자 중심 설계와 반복 피드백을 통한 기능 개선 주도
+
 [🔗 GitHub 보기](https://github.com/feed-mina/MIMO)
 
 ---
 
 ## ⑤ 구로 청년 이룸  
+
 **🔧 기술 스택**: React.js, HTML/CSS, Figma, Google Analytics, Netlify
+
 **🧑‍🤝‍🧑 팀 구성**: 5인  
 
 - 청년 커뮤니티 활성화를 목표로 React 기반 반응형 이벤트 플랫폼 웹사이트를 개발했습니다. 밸런스 게임, 심리 테스트, 일기장, 댓글 기능을 통해 사용자의 몰입도를 높이고, GA 태깅을 통해 사용자 이동 경로 및 클릭 수를 데이터화했습니다.
 - 반응형 모바일 최적화를 고려한 UI/UX 설계와 직접 배포를 진행했습니다.
 
 **성과:**
+
 - 반응형 UI/UX 설계 및 리액트 함수형 컴포넌트 개발경험
 - 사용자 데이터 기반 UX 분석 및 개선 경험 확보, 이벤트 기반 서비스 기획 경험
 - 구로 청년 이룸 프로그램 내 전체 팀 중 1등 수상
@@ -197,7 +211,7 @@
 # 🏆 수상 및 자격증
 
 - 🥇 **TABA AI 공모전 최우수상** (2022)  
-- 🧾 **정보처리기사 필기 합격 / 2025년 실기 시험 응시 완료 (합격 발표 대기 중)
+- 🧾 **정보처리기사 필기 합격** / 2025년 실기 시험 응시 완료 (합격 발표 대기 중)
 
 - 🛠 Microsoft Azure Fundamentals, Google GAIQ, MOS Master  
 
@@ -208,3 +222,5 @@
 
 - 📎 전체 GitHub: [github.com/feed-mina](https://github.com/feed-mina)  
 - 🛤️ 성장 스토리: [GrowthJourney.md](./GrowthJourney.md)  
+- Portfolio1: [https://justsaying.co.kr](https://justsaying.co.kr)
+- Portfolio2: [https://mindevprofile.kr](https://mindevprofile.kr)
