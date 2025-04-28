@@ -105,10 +105,6 @@
 
 ---
 
-> ⚙️ 본 문서의 프로젝트는 **기술 활용도 및 실무 연관성 기준으로 중요도 순**으로 정렬되어 있습니다.
-
----
-
 # 📘 주요 프로젝트
 
 ## ① Vue, Spring Boot, AWS 기반 웹 개발 및 FastAPI 기능
@@ -131,7 +127,7 @@
 
 ---
 
-### Click Your Taste! (gomgom-ai 프로젝트)
+## ② Click Your Taste! (gomgom-ai 프로젝트)
 
 **URL**: [https://mindevprofile.kr](https://mindevprofile.kr)  
 **기술 스택**: Django, Vue.js, Redis, PostgreSQL, AWS EC2/Nginx, OpenAI GPT-3.5 API, 요기요 클론 API
@@ -155,6 +151,8 @@
 
 **🔧 기술 스택**: Python, Flask, AI 모델  
 
+**기간**: 2022.12 
+
 - PyTorch를 사용해 CNN 기반 이미지 분류 모델을 설계하고, ImageNet 데이터셋을 전처리하여 학습 최적화를 진행했습니다.
 - GPU 메모리 한계 및 데이터 불균형 문제를 해결하기 위해 Batch Size 조정, 데이터 증강(Augmentation), EarlyStopping 기법을 적극 적용했습니다.
 - 단순 정확도뿐만 아니라 Validation Loss와 Confusion Matrix를 분석해 실제 데이터에서도 안정적인 모델 성능을 검증했습니다.
@@ -172,6 +170,8 @@
 ## ④ MIMO  
 
 **기술 스택**: React.js, HTML/CSS, JavaScript, Figma, Google Cloud, Firebase
+
+**기간**: 2022.02 
 
 **🧑‍🤝‍🧑 팀 구성**: 7인 (프론트 2, 백엔드 2, 모델링 3)  
 
@@ -191,8 +191,9 @@
 ## ⑤ 구로 청년 이룸  
 
 **🔧 기술 스택**: React.js, HTML/CSS, Figma, Google Analytics, Netlify
-
 **🧑‍🤝‍🧑 팀 구성**: 5인  
+
+**기간**: 2022.04
 
 - 청년 커뮤니티 활성화를 목표로 React 기반 반응형 이벤트 플랫폼 웹사이트를 개발했습니다. 밸런스 게임, 심리 테스트, 일기장, 댓글 기능을 통해 사용자의 몰입도를 높이고, GA 태깅을 통해 사용자 이동 경로 및 클릭 수를 데이터화했습니다.
 - 반응형 모바일 최적화를 고려한 UI/UX 설계와 직접 배포를 진행했습니다.
