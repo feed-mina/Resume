@@ -1,10 +1,11 @@
 ## 👩‍💻 사용자 경험과 데이터 기반 개선을 함께 고민하고
 ## 신뢰를 설계하는 개발자, 민예린 포트폴리오
 
-### 서비스의 본질에 공감하며, 기술로 가치를 실현하는 풀스택 개발자가 되고자 합니다.  
-### GitHub: [https://github.com/feed-mina](https://github.com/feed-mina)  
-### Portfolio1: [https://justsaying.co.kr](https://justsaying.co.kr)
-### Portfolio2: [https://mindevprofile.kr](https://mindevprofile.kr)
+#### 서비스의 본질에 공감하며, 기술로 가치를 실현하는 풀스택 개발자가 되고자 합니다.
+
+#### GitHub: [https://github.com/feed-mina](https://github.com/feed-mina)  
+#### Portfolio1: [https://justsaying.co.kr](https://justsaying.co.kr)
+#### Portfolio2: [https://mindevprofile.kr](https://mindevprofile.kr)
 
 ---
 
