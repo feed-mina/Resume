@@ -1,7 +1,6 @@
-## 👩‍💻 사용자 경험과 데이터 기반 개선을 함께 고민하고
-## 신뢰를 설계하는 개발자, 민예린 포트폴리오
+### 👩‍💻 사용자 경험과 데이터 기반 개선을 함께 고민하고
+### 신뢰를 설계하는 개발자, 민예린 포트폴리오
 
-#### 서비스의 본질에 공감하며, 기술로 가치를 실현하는 풀스택 개발자가 되고자 합니다.
 
 #### GitHub: [https://github.com/feed-mina](https://github.com/feed-mina)  
 #### Portfolio1: [https://justsaying.co.kr](https://justsaying.co.kr)
@@ -127,9 +126,9 @@
 - CRUD 일기장에서 생활 관리 및 학습 보조 기능까지 확장하여 통합 플랫폼으로 발전
 - MSA 구조를 고려한 Spring Boot + FastAPI 서버 통합 운영 경험 확보
 - 실제 사용자 운영 경험을 통해 안정성 및 사용자 경험 향상 실현
-
   
-[🔗 GitHub 보기](https://github.com/feed-mina/Diary)
+[🔗 GitHub Repository](https://github.com/feed-mina/Diary)
+
 ---
 
 ### Click Your Taste! (gomgom-ai 프로젝트)
@@ -166,8 +165,7 @@
 - 학습 환경 최적화 및 모델 성능 향상을 위한 반복 실험과 개선 경험 확보
 - AI 모델 개발 전 과정(데이터 전처리, 학습, 검증, 튜닝) 직접 수행
 - 공모전 **최우수상 수상**  을 통해 문제 해결력과 꾸준함을 객관적으로 검증
-
-[🔗 GitHub 보기](https://github.com/feed-mina/TABA1-_CCCR_-)
+[🔗 GitHub Repository](https://github.com/feed-mina/TABA1-_CCCR_-)
 
 ---
 
