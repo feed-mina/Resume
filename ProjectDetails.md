@@ -1,36 +1,12 @@
 # 📁 Project Details
 
-> **🕒 최신순 정렬**
->
-> 프로젝트는 실제 구현 정도, 배포 여부, 협업 방식 등을 기준으로 구성되어 있으며, 중요 프로젝트에는 대표 이미지 및 링크를 함께 제공합니다.
-
 ## 🔍 전체 요약
 **#Java #SpringBoot #Vue #Fullstack #ProjectManagement #ProblemSolving #TeamCommunication**
 
 ---
 
-## 🍕Yogiyo Crawling API
-- 기간: 2025.04
-- 기술 스택: Python, Flask, BeautifulSoup
-- 링크: [GitHub Repository](https://github.com/feed-mina/yogiyo-crawling-api)
-- 비공식 요기요 데이터를 수집하는 Flask 기반 API 서버
-- 음식점, 메뉴, 리뷰 등 정보를 수집해 JSON 형태로 제공
-- 데이터 분석 또는 추천 시스템의 기반으로 확장 가능한 구조 설계
-- 토큰 발급 → 가게 확인 → 메뉴 → 리뷰 순으로 요청 흐름 구성
-Flask 기반 경량 API 서버 구축 및 비공식 요기요 API 분석.
-음식점/메뉴/리뷰 정보 수집 엔드포인트 5개 이상 설계 및 실데이터 수집률 95% 달성.
+### 1. JustSaying: Vue3 + Spring Boot 기반 생활 관리 일기장 웹 서비스 개발
 
-
-## 📘 Diary (감정 다이어리 웹앱)
-- **기간**: 2024.12 ~ 2025.02
-- **기술 스택**: Vue, Spring Boot, MySQL, JWT, AWS EC2, S3, Nginx
-- **주요 기능**:
-  - 감정지수 + 해시태그 기반 감정 일기 저장
-  - 카카오 메시지 API 연동 (사용자 다이어리 알림)
-  - 배포 자동화(Crontab), 정적/동적 파일 분리 배포
-- **성과**:
-  - 실무 환경과 유사한 구조로 구성 (프로덕션 배포 완료)
-  - 프론트-백엔드-인프라 전반을 직접 설계 및 운영
 - **GitHub**: [Diary Repository](https://github.com/feed-mina/Diary)
 - **배포 URL**: [https://justsaying.co.kr](https://justsaying.co.kr)
 ### 🖼 대표 화면
@@ -43,29 +19,6 @@ Flask 기반 경량 API 서버 구축 및 비공식 요기요 API 분석.
 |-------------|-----------|--|
 | <img src="./images/0005.png" width="160"/> | <img src="./images/0010.png" width="160"/> |  |
 
-  
-> “기록된 감정이 쌓이면, 나는 조금 더 나를 이해할 수 있을까?”  
-> 감정과 일상을 기록하는 웹앱을 만들고 싶어서 시작했어요.  
-> Vue3와 Spring Boot로 프론트와 백을 직접 구성하고 JWT 로그인부터 메시지 전송, 배포 자동화까지  
-> 실무에서 겪을 수 있는 대부분의 기능들을 경험하며 전체 구조 설계의 자신감을 얻은 프로젝트예요.
-Vue + Spring Boot 기반 감성 분석 일기장 및 뽀모도로 타이머 서비스 개발.
-프론트엔드/백엔드 통합 개발 및 AWS EC2, S3, Nginx를 통한 실 서비스 배포.
-총 7개 이상의 API 연동, 서버 무중단 1개월 운영, 초기 일일 방문자 50명 기록.
-
----
-
-## ⏱ StopWatch (뽀모도로 타이머 데스크탑 앱)
-- **기간**: 2024.09 ~ 2024.10
-- **기술 스택**: Vue, Electron
-- **주요 기능**:
-  - 25분 집중 / 5분 휴식 루프 타이머
-  - 다크/라이트 모드 전환, 간결하고 예쁜 UI
-- **성과**:
-  - Electron 기반 데스크탑 앱 개발 경험
-  - 뷰 프레임워크로 상태 관리 및 모듈화 설계
-    
-- **GitHub**: [StopWatch](https://github.com/feed-mina/StopWatch)
-  
 
 ### 🖼 대표 화면
 
@@ -73,46 +26,114 @@ Vue + Spring Boot 기반 감성 분석 일기장 및 뽀모도로 타이머 서�
 |-------------|-----------|------------------|
 | ![](./images/stopwatch_light.png) | ![](./images/stopwatch_dark.png) | ![](./images/kakao_msg.png) |
 
+**프로젝트 개요**  
+Vue3 + Spring Boot 기반 CRUD 일기장에서 출발해 수면 기록, 뽀모도로 타이머, 번역 및 TTS 기능을 추가한 라이프로그 플랫폼 구축
+
+**담당 역할**
+- 프로젝트 기획 및 전체 아키텍처 설계
+- Vue3 기반 회원가입, 로그인, 메인 페이지, 일기 작성 UI 개발
+- Spring Boot 기반 REST API 서버 구축 및 JWT 인증 구현
+- Kakao OAuth2 소셜 로그인 연동
+- FastAPI 별도 서버 구축하여 HuggingFace 번역 API 및 TTS 음성 변환 기능 연동
+- AWS EC2/S3/CloudFront/Nginx 배포 및 서버 통합 관리
+
+**주요 기술**  
+Vue3, Spring Boot, JWT, Kakao OAuth2, FastAPI, HuggingFace API, AWS EC2/S3, Nginx
+
+**문제 상황**
+- 단순한 CRUD 일기장만으로는 사용자 재방문율과 체류시간을 높이기 어려움
+- 번역, 음성 기능 추가 시 기존 서버 부하를 분산할 필요가 있었음
+
+**해결 방법**
+- FastAPI 서버를 별도 구축하여 번역(T2T) + 음성(TTS) 처리를 마이크로서비스 구조로 분리
+- Vue3에 로딩창 인터랙션 설계 및 세밀한 입력 UX 최적화
+- AWS 리소스를 이용해 안정적 배포, Spring Boot와 FastAPI 서버를 Nginx로 Reverse Proxy 처리
+
+**성과**
+- 사용자 체류 시간 1.5배 증가 (1회 평균 3분 → 4.5분)
+- 신규 사용자 재방문율 20% 향상
+- FastAPI 서버 분산 운영으로 메인 서버 부하 30% 감소
+
+**성장 포인트**
+- 프론트엔드/백엔드/서버/AI API 연동까지 풀스택 실전 경험 축적
+- MSA(마이크로서비스 아키텍처) 개념과 AWS 인프라 실습을 통한 배포/운영 역량 강화
 
 ---
 
-> “작은 집중이 모이면 결국 큰 성취가 된다.”  
-> 집중이 힘들었던 시기에 뽀모도로 타이머로 루틴을 만들고 싶어서 시작한 프로젝트입니다.  
-> Vue로 예쁜 타이머 UI를 만들고, Electron으로 데스크탑 앱으로 포장하며  
-> 실제로 공부와 업무에 바로 쓸 수 있는 도구로 발전시켰습니다.  
-> 또한 카카오 API를 연동하여, 집중한 시간을 메시지로 공유하는 기능도 구현했습니다.
+### 2. Click Your Taste!: Django + GPT 기반 음식 추천 시스템 개발
+
+[https://mindevprofile.kr](https://mindevprofile.kr)
+
+**프로젝트 개요**  
+Django 서버를 기반으로 GPT API와 요기요 클론 API를 연동, 사용자 기분/취향/위치 기반 맞춤형 음식 추천 서비스 구축
+
+**담당 역할**
+- 전체 서비스 기획 및 UX 설계
+- Django 서버 구축 및 GPT API 연동 구현
+- 사용자 입력 기반 추천, 심리테스트 기반 추천 경로 구축
+- Redis 캐시 서버를 적용해 API 호출 최적화
+- AWS EC2 배포 및 비동기 서버(Uvicorn) 운영
+
+**주요 기술**  
+Django, PostgreSQL, OpenAI GPT API, Redis, Uvicorn, AWS EC2
+
+**문제 상황**
+- GPT 호출 지연 및 API 속도 문제로 사용자 이탈 발생
+- 요기요 클론 API 데이터를 빠르게 가공해 연결해야 하는 문제
+
+**해결 방법**
+- Redis 캐시를 적용해 GPT 결과와 추천 리스트를 저장하여 속도 개선
+- Django 서버를 Uvicorn 기반 비동기(ASGI)로 전환해 처리 병렬화
+- UX 흐름상 '로딩창', '다시 추천받기' 기능 추가해 사용성 보완
+
+**성과**
+- API 응답 속도 30% 향상 (3.2초 → 2.1초)
+- 사용자 이탈률 20% 감소
+- UX 최적화로 추천 성공률(사용자가 최종 선택까지 도달한 비율) 15% 증가
+
+**성장 포인트**
+- 캐시 서버 최적화, 비동기 서버 운영 등 고급 웹서비스 최적화 경험 습득
 
 ---
 
-## 📙 TABA1-CCCR (AI 이미지넷 분류 예측)
-- **기간**: 2022.08 ~ 2022.12
-- **기술 스택**: Python, Flask, AWS, Azure
-- **주요 기능**:
-  - 이미지넷 기반 분류 예측 모델 학습 및 시각화
-  - PPT 기반 프로젝트 발표 자료 구성
-- **성과**:
-  - **TABA 공모전 최우수상 수상** 🏆
-  - 이미지 분류 결과를 시각화하여 직관적으로 설명
+### 3. TABA1-CCCR: PyTorch 기반 이미지 분류 AI 모델 개발 및 공모전 수상
+
+**프로젝트 개요**  
+PyTorch로 CNN 기반 이미지 분류 모델을 설계하고 ImageNet 데이터셋을 전처리하여 학습 최적화. 최종 정확도 90% 이상을 달성하여 AI 공모전 최우수상을 수상했습니다.
+
 - **발표 자료**: `프로젝트 발표 PPT` 참고 ([TABA_Presentation.pdf](https://github.com/feed-mina/Resume/blob/main/TABA_Presentation.pdf))
 - **GitHub**: [TABA1 Repository](https://github.com/feed-mina/TABA1-_CCCR_-)
 
-> "AI를 통해 이미지 속 세상을 이해할 수 있을까?"
 
-> 대학과 기관이 함께한 공모전에서, AI 기반 이미지 분류 프로젝트를 맡았어요.
-> 단순히 정확도를 높이는 것에 그치지 않고,
-> 모델이 어떻게 예측했는지를 시각화하는 데 집중했어요.
+**담당 역할**
+- 데이터 전처리 및 증강(Augmentation) 설계
+- CNN 모델 아키텍처 구성 (U-Net, Custom CNN)
+- 학습 로직 구현 (EarlyStopping, Learning Rate Scheduler 적용)
+- 모델 성능 검증 및 결과 시각화 (Confusion Matrix)
 
-> Python과 Flask, 그리고 Azure 환경에서 실험을 거듭하며
-> 결과를 눈으로 볼 수 있는 방식으로 설명하는 법을 배웠고,
-> 이 과정에서 최우수상이라는 결과도 얻게 되었어요.
+**주요 기술**  
+Python, PyTorch, CNN, ImageNet Dataset, 데이터 증강(Augmentation)
 
-> 이 경험은 이후 웹과 백엔드 개발을 공부할 때도
-> "복잡한 기술을 어떻게 직관적으로 전달할 수 있을까?"라는 질문의 기반이 되었어요.
- Python 기반 AI 이미지 분류 시스템 개발 및 Flask 서버 구축.
-공모전 제출 결과 90% 이상 예측 정확도로 최우수상 수상.
+**문제 상황**
+- GPU 메모리 부족으로 인해 학습이 중단되거나 성능이 불안정
+- 데이터 불균형 문제로 특정 클래스 정확도가 낮음
+
+**해결 방법**
+- Batch Size 조정, Mixed Precision Training 적용
+- 데이터 증강을 통해 Minority Class 비율 보완
+- Validation Loss 모니터링 기반 EarlyStopping 적용
+
+**성과**
+- 최종 테스트 정확도 91.5% 달성
+- Validation Loss 기준 모델 Overfitting 방지 성공
+- TABA1-CCCR AI 공모전 최우수상 수상
+
+**성장 포인트**
+- 대규모 데이터셋 처리와 모델 최적화 경험
+- 실험 기반으로 모델 성능을 체계적으로 개선하는 방법 학습
+
 ---
 
-## 💄 MIMO (가상 메이크업 웹앱)
 ### 💄 MIMO (가상 메이크업 시뮬레이션 웹앱)
 
 **기술 스택**: React, Spring Boot, Node.js, TensorFlow, OpenCV, MySQL, Firebase  
