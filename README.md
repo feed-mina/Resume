@@ -1,7 +1,6 @@
-### 👩‍💻 사용자 경험과 데이터 기반 개선을 함께 고민하고
-### 신뢰를 설계하는 개발자, 민예린 포트폴리오
+# 민예린 (Min Yerin)
 
-
+#### 📧 Email: myelin24@naver.com  
 #### GitHub: [https://github.com/feed-mina](https://github.com/feed-mina)  
 #### Portfolio1: [https://justsaying.co.kr](https://justsaying.co.kr)
 #### Portfolio2: [https://mindevprofile.kr](https://mindevprofile.kr)
@@ -48,9 +47,7 @@
 ---
 
 ## 💼 개발자 한 줄 소개
-기술로 문제를 해결하는 과정에 매력을 느끼고, 사용자 관점에서 문제를 이해하며 성장하고 있습니다. 주어진 일에 꾸준히 몰입하고, 기록과 피드백을 통해 한 단계씩 발전하는 개발자가 되고자 합니다.
-
-기술로 문제를 해결하는 과정에 매력을 느끼고, 사용자 관점에서 문제를 이해하고 해결하며 개발자로 성장하고 있습니다. 포기하지 않는 끈기로 목표를 끝까지 완수하는 개발자가 되고자 합니다
+기술로 문제를 해결하는 과정에 매력을 느끼고, 사용자 관점에서 문제를 이해하며 성장하고 있습니다. 주어진 일에 꾸준히 몰입하고, 기록과 피드백을 통해 한 단계씩 발전하는 개발자가 되고자 합니다. **Vue.js, React.js, Spring Boot, Django 기반 웹서비스를 설계하고 구축하는 풀스택 웹 개발자**입니다. 사용자 경험을 고려한 UI/UX 설계부터 백엔드 API 서버 구축, AWS 인프라 배포까지 실전 경험을 쌓았으며, 지속적인 자기개발과 문제 해결에 강점을 가지고 있습니다.
 
 ---
 
@@ -70,17 +67,20 @@
 ---
 
 
-# 🛠 기술 스택
+## 🛠️ 기술 스택 및 활용 경험
 
-| 구분       | 기술                                                         |
-|------------|--------------------------------------------------------------|
-| Frontend   | Vue.js, React.js, HTML5, CSS3, JavaScript                    |
-| Backend    | Java (Spring Boot), Python (Flask), JWT, REST API            |
-| Database   | MySQL, PostgreSQL, MSSQL                                     |
-| Infra      | AWS EC2, S3, Firebase, Nginx                                 |
-| 협업 도구  | Git/GitHub, Figma, Notion, Slack, Jira                        |
+| 분야        | 기술 | 활용 경험 |
+|:-----------|:-----|:--------|
+| 프론트엔드 | Vue.js, React.js, HTML/CSS/JavaScript | Vue3 기반 일기장 CRUD 기능 개발, React 기반 이벤트 플랫폼 UI 구현 |
+| 백엔드     | Spring Boot, Django, FastAPI | JWT 인증 API 개발(Spring Boot), GPT 연동 추천 시스템 구축(Django) |
+| 웹개발 (기본) | PHP(Basic) | 간단한 유지보수 및 이벤트 페이지 작업 경험 |
+| 데이터베이스 | MySQL, PostgreSQL | 서비스별 데이터 모델링 및 쿼리 최적화 |
+| 인프라      | AWS EC2, S3, CloudFront, Nginx | EC2+Nginx 기반 서비스 배포 및 리버스 프록시 설정 |
+| 최적화/캐싱 | Redis | Django 서버 캐싱 최적화, API 응답 속도 개선 |
+| 협업도구    | Git, GitHub, Jira, Slack | 팀 프로젝트 관리 및 협업 실습 경험 |
 
 ---
+
 
 # 📚 경력 요약
 
@@ -217,6 +217,16 @@
 
 ---
 
+## 📈 향후 성장 방향
+
+- Vue3 Composition API 및 React Hooks 심화 학습
+- Spring Boot + JPA 최적화 및 대규모 트래픽 대응 역량 강화
+- Django + FastAPI 기반 MSA 구축 경험 확장
+- Next.js, Nuxt.js 등 최신 프론트엔드 프레임워크 학습 및 프로젝트 적용
+- 대규모 서비스 운영 경험을 통한 기술 깊이 확장 및 전문성 강화 
+
+
+---
 # ✅ 마무리 및 링크
 > 기술로 문제를 해결하고, 사용자에게 가치를 전달하는 개발자가 되겠습니다.
 
