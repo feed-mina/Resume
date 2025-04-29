@@ -51,36 +51,39 @@
 
 ---
 
-# 🚀 핵심 역량 요약  
+🚀 핵심 역량 요약
+Spring Boot 기반 백엔드 개발 및 REST API 설계
 
-- Spring 기반 백엔드 개발 및 REST API 설계
-- Vue.js 기반 프론트엔드 UI 및 사용자 경험 최적화
-- Flask 기반 경량 서버 및 Electron 기반 사이드 앱 개발
-- Spring Boot, Vue.js, Flask를 활용한 MSA 기반 멀티 서비스 구축 및 운영 경험
- - MySQL, PostgreSQL 기반 데이터베이스 모델링 및 최적화
-- Python 기반 요기요 비공식 API 크롤링 서버 구축 및 데이터 수집 자동화
-- Hugging Face 및 OpenAI API(GPT) 연동을 통한 LLM 서비스 구축 (외부 API 활용 경험)
-- JWT 인증, OAuth2(카카오 로그인), 이메일 인증(SMTP)
-- AWS EC2, S3, Nginx를 활용한 인프라 구축 및 배포
-- 기획부터 설계, 개발, 배포까지 프로젝트 전 주기 주도 경험
+Vue.js 기반 프론트엔드 UI 및 사용자 경험 최적화
+
+Flask 기반 경량 서버 및 Electron 기반 사이드 앱 개발
+
+Spring Boot, Vue.js, FastAPI를 활용한 MSA(마이크로서비스 아키텍처) 기반 서비스 구축 및 운영
+
+MySQL, PostgreSQL 데이터베이스 모델링 및 최적화
+
+Python 기반 요기요 비공식 API 크롤링 서버 구축 및 데이터 수집 자동화
+
+Google Translate 및 Google Text-to-Speech API 연동 경험 (FastAPI 활용)
+
+JWT 인증, OAuth2(카카오 로그인), 이메일 인증(SMTP)
+
+AWS EC2, S3, Nginx 기반 인프라 구축 및 배포
+
+기획부터 설계, 개발, 배포까지 프로젝트 전 주기 주도 경험
+
+🛠️ 기술 스택 및 활용 경험
+
+분야	기술	활용 경험
+프론트엔드	Vue.js, React.js, HTML/CSS/JavaScript	Vue3 기반 일기장 CRUD 개발, React 기반 이벤트 플랫폼 UI 개발
+백엔드	Spring Boot, Django, FastAPI	JWT 인증 API(Spring Boot), GPT 연동 추천 시스템(Django)
+웹 개발 (기본)	PHP (Basic)	유지보수 및 이벤트 페이지 개발 경험
+데이터베이스	MySQL, PostgreSQL	데이터 모델링 및 쿼리 최적화
+인프라	AWS EC2, S3, CloudFront, Nginx	서비스 배포 및 리버스 프록시 설정
+최적화/캐싱	Redis	Django 서버 캐싱 최적화 및 API 응답 속도 개선
+협업 도구	Git, GitHub, Jira, Slack	팀 프로젝트 협업 및 관리
 
 ---
-
-
-## 🛠️ 기술 스택 및 활용 경험
-
-| 분야        | 기술 | 활용 경험 |
-|:-----------|:-----|:--------|
-| 프론트엔드 | Vue.js, React.js, HTML/CSS/JavaScript | Vue3 기반 일기장 CRUD 기능 개발, React 기반 이벤트 플랫폼 UI 구현 |
-| 백엔드     | Spring Boot, Django, FastAPI | JWT 인증 API 개발(Spring Boot), GPT 연동 추천 시스템 구축(Django) |
-| 웹개발 (기본) | PHP(Basic) | 간단한 유지보수 및 이벤트 페이지 작업 경험 |
-| 데이터베이스 | MySQL, PostgreSQL | 서비스별 데이터 모델링 및 쿼리 최적화 |
-| 인프라      | AWS EC2, S3, CloudFront, Nginx | EC2+Nginx 기반 서비스 배포 및 리버스 프록시 설정 |
-| 최적화/캐싱 | Redis | Django 서버 캐싱 최적화, API 응답 속도 개선 |
-| 협업도구    | Git, GitHub, Jira, Slack | 팀 프로젝트 관리 및 협업 실습 경험 |
-
----
-
 
 # 📚 경력 요약
 
@@ -114,7 +117,7 @@
 **기간**: 2025.03
 
 - Vue3(화면)와 Spring Boot(서버) 기반 일기장 CRUD 기능 개발 및 JWT 인증, Kakao OAuth 소셜 로그인 기능 구현했습니다.
-- Spring Boot 메인 서버와 FastAPI 서버를 별도로 구축하여 HuggingFace API를 활용한 일본어 번역 및 TTS 음성 출력 기능을 추가 개발 중입니다.
+- Spring Boot 메인 서버와 FastAPI 서버를 별도로 구축하여 일본어 번역 및 TTS 음성 출력 기능을 추가 개발 중입니다.
 - 수면 패턴 기록 및 뽀모도로 타이머 기능을 통해 하루 시간 관리를 지원하며, 전체 시스템은 AWS EC2, S3, CloudFront를 통한 배포 및 Nginx 리버스 프록시를 활용해 통합 운영하고 있습니다.
 - 단순 기록을 넘어, 생활 개선과 학습까지 지원하는 웹 서비스로 발전 중입니다.
 
