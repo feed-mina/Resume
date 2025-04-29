@@ -5,10 +5,31 @@
 
 ---
 
-### 1. JustSaying: Vue3 + Spring Boot 기반 생활 관리 일기장 웹 서비스 개발
+
+### 1. Vue, Spring Boot, AWS 기반 웹 개발 + FastAPI 연동 프로젝트
+
+- **URL**: https://justsaying.co.kr
+- **기술 스택**: Vue.js, Spring Boot, FastAPI, AWS EC2/S3/CloudFront, Nginx, Google Translate API, Google Text-to-Speech API
+
+### 프로젝트 개요
+
+- Vue3 + Spring Boot 기반으로 일기장 CRUD 기능을 개발하고, JWT 인증 및 Kakao OAuth 소셜 로그인 기능을 구현했습니다.
+- 추가 기능으로 FastAPI 서버를 별도로 구축해, **Google Translate API**를 통한 일본어 번역, **Google Text-to-Speech API**를 통한 음성 변환 기능을 구현했습니다.
+- 수면 패턴 기록, 뽀모도로 타이머 기능을 통해 하루 시간 관리를 지원하는 웹 서비스로 확장했습니다.
+- 전체 시스템은 AWS EC2, S3, CloudFront를 통해 배포하고, Nginx 리버스 프록시로 통합 운영했습니다.
+
+※ 원래는 Hugging Face 기반 번역 및 TTS 모델을 사용하려 했으나, 적합한 모델을 찾지 못해 Google API를 대체 사용하게 되었습니다.
+
+### 주요 성과
+
+- 단순 일기장에서 생활 기록 및 학습 플랫폼으로 기능 확장
+- MSA 기반 구조로 FastAPI와 Spring Boot 서버를 효율적으로 분리 및 운영
+- 실제 사용자 운영을 통해 안정성과 사용자 경험을 모두 향상
+
 
 - **GitHub**: [Diary Repository](https://github.com/feed-mina/Diary)
 - **배포 URL**: [https://justsaying.co.kr](https://justsaying.co.kr)
+--- 
 ### 🖼 대표 화면
 
 | 메인페이지 | 튜토리얼 | 감정 일기 작성 |
@@ -26,38 +47,44 @@
 |-------------|-----------|------------------|
 | ![](./images/stopwatch_light.png) | ![](./images/stopwatch_dark.png) | ![](./images/kakao_msg.png) |
 
-**프로젝트 개요**  
-Vue3 + Spring Boot 기반 CRUD 일기장에서 출발해 수면 기록, 뽀모도로 타이머, 번역 및 TTS 기능을 추가한 라이프로그 플랫폼 구축
+--- 
 
-**담당 역할**
+### 기술구현
+
 - 프로젝트 기획 및 전체 아키텍처 설계
 - Vue3 기반 회원가입, 로그인, 메인 페이지, 일기 작성 UI 개발
 - Spring Boot 기반 REST API 서버 구축 및 JWT 인증 구현
 - Kakao OAuth2 소셜 로그인 연동
-- FastAPI 별도 서버 구축하여 HuggingFace 번역 API 및 TTS 음성 변환 기능 연동
-- AWS EC2/S3/CloudFront/Nginx 배포 및 서버 통합 관리
+- FastAPI 기반 Google Translate, Google Text-to-Speech 기능 서버 구축
+- AWS EC2, S3, CloudFront, Nginx를 통한 배포 및 서버 통합 관리
 
-**주요 기술**  
-Vue3, Spring Boot, JWT, Kakao OAuth2, FastAPI, HuggingFace API, AWS EC2/S3, Nginx
+### 문제 상황 및 해결 방법
 
-**문제 상황**
-- 단순한 CRUD 일기장만으로는 사용자 재방문율과 체류시간을 높이기 어려움
-- 번역, 음성 기능 추가 시 기존 서버 부하를 분산할 필요가 있었음
+| 문제 상황 | 해결 방법 |
+|:---|:---|
+| CRUD 일기장만으로는 사용자 체류 시간과 재방문율이 낮았음 | 번역 및 음성 기능 추가로 서비스 가치를 확장 |
+| 서버 부하 문제 발생 | 번역과 TTS 기능을 FastAPI 별도 서버로 분리하여 부하 분산 |
+| Hugging Face 모델 부재로 번역/TTS 성능 한계 | Google Translate, Google TTS API로 대체하여 신속히 기능 완성 |
+| UX 최적화 필요 | Vue3에서 로딩창 인터랙션 및 세밀한 입력 최적화 구현 |
 
-**해결 방법**
-- FastAPI 서버를 별도 구축하여 번역(T2T) + 음성(TTS) 처리를 마이크로서비스 구조로 분리
-- Vue3에 로딩창 인터랙션 설계 및 세밀한 입력 UX 최적화
-- AWS 리소스를 이용해 안정적 배포, Spring Boot와 FastAPI 서버를 Nginx로 Reverse Proxy 처리
+### 성과
 
-**성과**
-- 사용자 체류 시간 1.5배 증가 (1회 평균 3분 → 4.5분)
+- 사용자 1회 평균 체류 시간 1.5배 증가 (3분 → 4.5분)
 - 신규 사용자 재방문율 20% 향상
-- FastAPI 서버 분산 운영으로 메인 서버 부하 30% 감소
+- 메인 서버 부하 30% 감소
 
-**성장 포인트**
-- 프론트엔드/백엔드/서버/AI API 연동까지 풀스택 실전 경험 축적
-- MSA(마이크로서비스 아키텍처) 개념과 AWS 인프라 실습을 통한 배포/운영 역량 강화
+### 성장 포인트
 
+- 프론트엔드, 백엔드, 서버, 외부 API 연동까지 포함한 실전 풀스택 경험 축적
+- MSA 구조 및 AWS 인프라 운영 역량 강화
+
+---
+
+### 🔗 GitHub Repository
+
+- **JustSaying 프로젝트**:  [https://github.com/feed-mina/Diary](https://github.com/feed-mina/Diary)
+- **배포 URL**: https://justsaying.co.kr
+ 
 ---
 
 ### 2. Click Your Taste!: Django + GPT 기반 음식 추천 시스템 개발
