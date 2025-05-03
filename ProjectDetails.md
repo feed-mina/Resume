@@ -38,7 +38,7 @@
 
 | 일기 리스트 | 상세 보기 |  |
 |-------------|-----------|--|
-| <img src="./images/list.png" width="160"/> | <img src="./images/view_.png" width="160"/> |  |
+| <img src="./images/list_.png" width="160"/> | <img src="./images/view_.png" width="160"/> |  |
 
 
 ### 🖼 대표 화면
