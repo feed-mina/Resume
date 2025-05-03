@@ -34,11 +34,11 @@
 
 | 메인페이지 | 튜토리얼 | 감정 일기 작성 |
 |------------|----------|----------------|
-| <img src="./images/main.png" width="160"/> | <img src="./images/tutorial.png" width="160"/> | <img src="./images/0004.png" width="160"/> |
+| <img src="./images/main.png" width="160"/> | <img src="./images/tutorial.png" width="160"/> | <img src="./images/writing_finall.png" width="160"/> |
 
 | 일기 리스트 | 상세 보기 |  |
 |-------------|-----------|--|
-| <img src="./images/0005.png" width="160"/> | <img src="./images/0010.png" width="160"/> |  |
+| <img src="./images/list.png" width="160"/> | <img src="./images/view_.png" width="160"/> |  |
 
 
 ### 🖼 대표 화면
