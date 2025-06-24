@@ -225,19 +225,18 @@
 
 # 🏆 수상 및 자격증
 
-- 🥇 **TABA AI 공모전 최우수상** (2022)  
-- 🧾 **정보처리기사 필기 합격** / 2025년 실기 시험 응시 완료 (합격 발표 대기 중)
 
-- 🛠 Microsoft Azure Fundamentals, Google GAIQ, MOS Master  
+| 과정명              | 기간     |
+|---------------------|----------|
+| TABA AI 공모전 최우수상| 2022.12 |
+| GAIQ  | 2021. 01 | 
+| MOS Master  | 2015. 12 | 
 
+ 
 ---
 
 ## 📈 향후 성장 방향
-
-- Vue3 Composition API 및 React Hooks 심화 학습
-- Spring Boot + JPA 최적화 및 대규모 트래픽 대응 역량 강화
-- Django + FastAPI 기반 MSA 구축 경험 확장
-- Next.js, Nuxt.js 등 최신 프론트엔드 프레임워크 학습 및 프로젝트 적용
+    
 - 대규모 서비스 운영 경험을 통한 기술 깊이 확장 및 전문성 강화 
 
 
