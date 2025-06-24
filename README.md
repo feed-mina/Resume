@@ -123,41 +123,44 @@
 
 # 📘 주요 프로젝트
 
-## ① Vue, Spring Boot, AWS 기반 웹 개발 및 FastAPI 기능
+## ① JustSaying – 감정 기반 일기 및 TTS 피드백 서비스
 **📍 URL**: [https://justsaying.co.kr](https://justsaying.co.kr)  
 **🔧 기술 스택**: Vue.js, Spring Boot, FastAPI, AWS EC2/S3/CloudFront, Nginx, HuggingFace API
 
-**기간**: 2025.03
+**기간**: 2025.03 ~ 진행중
 
-- Vue3(화면)와 Spring Boot(서버) 기반 일기장 CRUD 기능 개발 및 JWT 인증, Kakao OAuth 소셜 로그인 기능 구현했습니다.
-- Spring Boot 메인 서버와 FastAPI 서버를 별도로 구축하여 일본어 번역 및 TTS 음성 출력 기능을 추가 개발 중입니다.
-- 수면 패턴 기록 및 뽀모도로 타이머 기능을 통해 하루 시간 관리를 지원하며, 전체 시스템은 AWS EC2, S3, CloudFront를 통한 배포 및 Nginx 리버스 프록시를 활용해 통합 운영하고 있습니다.
-- 단순 기록을 넘어, 생활 개선과 학습까지 지원하는 웹 서비스로 발전 중입니다.
+- 멀티백엔드 구조 설계: 인증/일기/기록 API는 Spring Boot, TTS·형태소 분석은 FastAPI로 분리하여 책임 분산
+- JWT 인증 + 쿠키 전달: 자체 JWT 발급 및 Refresh 토큰 Redis 저장으로 인증 구조 안정화
+- TTS/번역 결과 캐싱: 동일 문장 재요청 시 Redis 캐시를 통해 재처리 없이 빠른 피드백 제공
+- 카카오·네이버 OAuth2 로그인: 인가코드 → 액세스토큰 → 사용자 정보 → JWT 생성 흐름 완전 구현
+- Vue UI 구성: 일기장 CRUD, 스탑워치/뽀모도로, TTS 오디오 피드백, 감정 분석 결과 시각화
 
 **성과:**
-- CRUD 일기장에서 생활 관리 및 학습 보조 기능까지 확장하여 통합 플랫폼으로 발전
-- MSA 구조를 고려한 Spring Boot + FastAPI 서버 통합 운영 경험 확보
-- 실제 사용자 운영 경험을 통해 안정성 및 사용자 경험 향상 실현
+- 실시간 감정 분석/음성 피드백 루프 완성 (AI 분석 ↔ UX 반영)
+- Redis TTL 기반 캐시 구조 설계 및 충돌/중복 방지
+- AWS CloudFront + Nginx 리버스 프록시 + 인증서 자동 갱신까지 실배포 경험 확보
   
 [🔗 GitHub Repository](https://github.com/feed-mina/Diary)
 
 ---
 
-## ② Click Your Taste! (gomgom-ai 프로젝트)
+## ② Gomgom AI – GPT 기반 감정 맞춤 음식 추천 서비스
 
 **URL**: [https://mindevprofile.kr](https://mindevprofile.kr)  
 **기술 스택**: Django, Vue.js, Redis, PostgreSQL, AWS EC2/Nginx, OpenAI GPT-3.5 API, 요기요 클론 API
 
 **기간**: 2025.04  
 
-- Django 기반으로 사용자의 자유 입력 또는 심리 테스트 결과를 수집해 OpenAI GPT API로 감성 기반 음식 카테고리를 추천하고, 요기요 클론 API 데이터를 연동하여 실제 음식점을 추천하는 서비스를 구축했습니다.
-- Redis 캐시를 활용해 GPT 결과 및 음식점 리스트 제공 속도를 최적화하고, PostgreSQL을 기반으로 사용자 요청 및 추천 결과를 안정적으로 저장했습니다.
-- Django 서버를 ASGI(Uvicorn) 기반 비동기 환경으로 운영하면서 API 응답 지연을 최소화하고, 운영 중 발생한 Redis 연결 오류, 메모리 부족, CORS 정책 이슈를 직접 해결해 안정적인 서버 운영 역량을 강화했습니다.
-
+- GPT 프롬프트 최적화: 사용자 감정 입력을 GPT 프롬프트로 재구성하여 상황 맞춤 음식 키워드 추천
+- 요기요 비공식 API + 크롤러: 음식 키워드 선택 시 실제 지역 기반 음식점 정보 수집 및 정렬
+- 레시피/재료 정보 출력: Spoonacular API + 한글 번역 딕셔너리로 재료 정보 제공 예정
+- Redis 캐시 활용: emotion:{감정} / store:{음식} 캐시 TTL 10분 → 빠른 응답 및 서버 부하 최소화
+- ERD 설계: N:M 감정 추천 기록, GPT 추천 키워드, 실제 음식점 매핑까지 모두 정규화 설계
+ 
 **성과**:  
-- 사용자 상황에 맞춘 개인화 추천 시스템 기획 및 개발
+- GPT + 크롤링 API + DB 저장 + 캐싱까지 엔드투엔드 구성
 - 비공식 경로 분석 및 요청 파라미터 추적을 통해 실서비스 데이터 수집 성공  
-- 실사용 테스트를 통해 추천 시스템의 안정성과 사용자 만족도 향상
+- Redis 캐시 TTL 설계 및 장애 대응 경험 확보 (메모리 누수/중복 재처리 이슈 해결)
 🔗 [GitHub Repository](https://github.com/feed-mina/gomgom-ai)
 
 
