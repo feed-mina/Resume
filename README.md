@@ -82,15 +82,16 @@
 
 ## 🛠️ 기술 스택 및 활용 경험
 
-| 분야         | 기술                                      | 활용 경험 |
-|--------------|-------------------------------------------|------------|
-| 프론트엔드   | Vue.js, React.js, HTML/CSS/JavaScript     | Vue3 기반 일기장 CRUD 개발<br>React 기반 이벤트 플랫폼 UI 개발 |
-| 백엔드       | Spring Boot, Django, FastAPI              | JWT 인증 API(Spring Boot)<br>GPT 연동 추천 시스템(Django) |
-| 웹 개발 (기본) | PHP (Basic)                               | 유지보수 및 이벤트 페이지 개발 경험 |
-| 데이터베이스 | MySQL, PostgreSQL                         | 데이터 모델링 및 쿼리 최적화 |
-| 인프라       | AWS EC2, S3, CloudFront, Nginx             | 서비스 배포 및 리버스 프록시 설정 |
-| 최적화/캐싱  | Redis                                     | Django 서버 캐싱 최적화 및 API 응답 속도 개선 |
-| 협업 도구    | Git, GitHub, Jira, Slack                  | 팀 프로젝트 협업 및 관리 |
+| 분야           | 기술 및 툴       | 실무 적용 및 활용 경험         |
+| ------------ | -------------------| ------------------------------- |
+| **프론트엔드**    | Vue 3 (Pinia), React.js (Recoil), Axios, HTML/CSS | - 감정 일기, 뽀모도로 UI 구성 및 API 연동<br>- TTS 결과 오디오 재생 기능 구현<br>- SNS 로그인 인증 연동 및 쿠키 처리                           |
+| **백엔드**      | Spring Boot (JWT, OAuth2), FastAPI, Django        | - JWT 기반 인증 및 refresh 토큰 구조 설계<br>- FastAPI로 TTS·형태소 분석 등 경량 AI 처리 서버 분리<br>- Django 기반 GPT 연동 추천 시스템 구축   |
+| **AI·NLP**   | OpenAI GPT API, KoNLPy, Google TTS, gTTS          | - 감정 → 음식 추천 프롬프트 설계<br>- 형태소 분석 + 일본어 번역 → 피드백 오디오(TTS) 생성<br>- 발음 교정 기능 포함                               |
+| **데이터베이스**   | MySQL, PostgreSQL                                 | - ERD 설계 및 JWT/RefreshToken, 감정 일기/추천 기록 구조 구축<br>- N\:M 열람 이력, 추천 결과 정규화                                  |
+| **캐시/세션 관리** | Redis                                             | - GPT/TTS 결과 TTL 기반 캐싱<br>- 사용자 로그인 세션 저장<br>- 동일 문장 TTS 요청 시 캐시 재활용                                       |
+| **인프라 및 배포** | AWS EC2, S3, CloudFront, Nginx, Let's Encrypt     | - S3 정적 파일 → CloudFront HTTPS 배포<br>- EC2 내 Spring Boot, FastAPI 서버 운영<br>- Nginx 리버스 프록시 설정 및 HTTPS 인증 적용 |
+| **기타 협업/운영** | GitHub, Jira, Slack, Figma                        | - 전체 프로젝트 관리 및 디자인 협업<br>- 실시간 피드백 기반 기능 반복 개선                                                             |
+
 
 ---
 
