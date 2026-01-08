@@ -65,16 +65,16 @@
   Vue.js, React.js를 활용한 **단일 페이지 애플리케이션(SPA)**에서 컴포넌트 분리, 상태 관리(Pinia, Recoil 등), Axios 인터셉터를 통한 인증 유지 등 실제 사용자 시나리오 중심 UI 구현 경험이 있습니다.
 
 - **비동기 API 및 경량 서버 구성 역량**  
-  Flask와 FastAPI 기반으로 경량화된 비동기 API 서버를 구성하고, Google Translate 및 TTS 기능을 연동하여 다국어 처리 기능을 안정적으로 제공한 경험이 있습니다.
+  Flask와 FastAPI 기반으로 경량화된 비동기 API 서버를 구성 , 예를 들면 TTS 기능 구축 및 다국어 처리(i8) 기능을 안정적으로 제공한 경험이 있습니다.
 
 - **MSA 구조 및 캐시 최적화 설계**  
-  Spring Boot와 FastAPI 기반의 마이크로서비스 구성 경험이 있으며, Redis를 활용해 GPT 결과 캐싱 및 API 응답 속도 최적화를 직접 구현했습니다.
+  Spring Boot와 FastAPI 기반의 마이크로서비스 구성 경험이 있으며 Redis를 활용해  캐싱 및 API 응답 속도 최적화를 직접 구현했습니다.
 
 - **데이터베이스 모델링 및 성능 튜닝 경험**  
   MySQL, PostgreSQL을 기반으로 한 ERD 설계, 쿼리 최적화, 대용량 테이블 조인 로직 분석 및 데이터 딕셔너리 구축 경험이 있습니다.
 
 - **실전형 프로젝트 배포 및 인프라 운영 경험**  
-  AWS EC2, S3, CloudFront, Nginx를 기반으로 한 프로젝트 배포 경험이 있으며, HTTPS 설정, CORS 대응, 리버스 프록시 구성 등 서비스 운영에 필요한 전반적인 인프라 설정과 장애 대응 경험을 갖추고 있습니다.
+  AWS EC2, S3, CloudFront, Nginx를 기반으로 한 프로젝트 배포 경험이 있으며, HTTPS 설정, CORS 대응 등 서비스 운영에 필요한 전반적인 인프라 설정과 장애 대응 경험을 갖추고 있습니다.
 
 - **문제 해결 중심 개발 프로세스 주도 경험**  
   기획 → 개발 → 테스트 → 배포까지 전체 사이클을 주도하며, 운영 중 발생한 오류(CORS, 인증 누락, 서버 부하 등)를 스스로 분석하고 개선한 실전 경험을 보유하고 있습니다.
@@ -84,11 +84,11 @@
 
 | 분야           | 기술 및 툴       | 실무 적용 및 활용 경험         |
 | ------------ | -------------------| ------------------------------- |
-| **프론트엔드**    | Vue 3 (Pinia), React.js (Recoil), Axios, HTML/CSS | - 감정 일기, 뽀모도로 UI 구성 및 API 연동<br>- TTS 결과 오디오 재생 기능 구현<br>- SNS 로그인 인증 연동 및 쿠키 처리                           |
+| **프론트엔드**    | Vue 3, React.js , Axios, HTML/CSS | - 감정 일기, 뽀모도로 UI 구성 및 API 연동<br>- TTS 결과 오디오 재생 기능 구현<br>- SNS 로그인 인증 연동 및 쿠키 처리                           |
 | **백엔드**      | Spring Boot (JWT, OAuth2), FastAPI, Django        | - JWT 기반 인증 및 refresh 토큰 구조 설계<br>- FastAPI로 TTS·형태소 분석 등 경량 AI 처리 서버 분리<br>- Django 기반 GPT 연동 추천 시스템 구축   |
-| **AI·NLP**   | OpenAI GPT API, KoNLPy, Google TTS, gTTS          | - 감정 → 음식 추천 프롬프트 설계<br>- 형태소 분석 + 일본어 번역 → 피드백 오디오(TTS) 생성<br>- 발음 교정 기능 포함                               |
-| **데이터베이스**   | MySQL, PostgreSQL                                 | - ERD 설계 및 JWT/RefreshToken, 감정 일기/추천 기록 구조 구축<br>- N\:M 열람 이력, 추천 결과 정규화                                  |
-| **캐시/세션 관리** | Redis                                             | - GPT/TTS 결과 TTL 기반 캐싱<br>- 사용자 로그인 세션 저장<br>- 동일 문장 TTS 요청 시 캐시 재활용                                       |
+| **AI·NLP**   | OpenAI GPT API, KoNLPy, Google TTS    | - 감정 → 음식 추천 프롬프트 설계<br>- 형태소 분석 + 일본어 번역 → 피드백 오디오(TTS) 생성<br>                              |
+| **데이터베이스**   | MySQL, PostgreSQL                                 | - ERD 설계 및   N\:M  정규화                                  |
+| **캐시/세션 관리** | Redis                                             | - 검색어 기반 캐싱<br>- 사용자 로그인 세션 저장<br>- 동일 문장 TTS 요청 시 캐시 재활용                                       |
 | **인프라 및 배포** | AWS EC2, S3, CloudFront, Nginx, Let's Encrypt     | - S3 정적 파일 → CloudFront HTTPS 배포<br>- EC2 내 Spring Boot, FastAPI 서버 운영<br>- Nginx 리버스 프록시 설정 및 HTTPS 인증 적용 |
 | **보안** | ISMS-P 및 DMARC, ANTI-SPAM| - ISMS-P 정책에 걸리는 인증절차 코드 수정, DMARC리포트 작성|
 | **기타 협업/운영** | GitHub, Jira, Slack, Figma   | - 전체 프로젝트 관리 및 디자인 협업<br>- 실시간 피드백 기반 기능 반복 개선|
@@ -140,7 +140,7 @@
 **성과:**
 - 실시간 감정 분석/음성 피드백 루프 완성 (AI 분석 ↔ UX 반영)
 - Redis TTL 기반 캐시 구조 설계 및 충돌/중복 방지
-- AWS CloudFront + Nginx 리버스 프록시 + 인증서 자동 갱신까지 실배포 경험 확보
+- AWS CloudFront + Nginx 리버스 프록시까지 실배포 경험 확보
   
 [🔗 GitHub Repository](https://github.com/feed-mina/Diary)
 
@@ -149,21 +149,19 @@
 ## ② Gomgom AI – GPT 기반 감정 맞춤 음식 추천 서비스
 
 **URL**: [https://mindevprofile.kr](https://mindevprofile.kr)  
-**기술 스택**: Django, Vue.js, Redis, PostgreSQL, AWS EC2/Nginx, OpenAI GPT-3.5 API, 요기요 클론 API
+**기술 스택**: Django, Vue.js, Redis, PostgreSQL, AWS EC2/Nginx, OpenAI GPT-3.5 API, 요기요 API 활용
 
 **기간**: 2025.04  
 
 - GPT 프롬프트 최적화: 사용자 감정 입력을 GPT 프롬프트로 재구성하여 상황 맞춤 음식 키워드 추천
 - 요기요 비공식 API + 크롤러: 음식 키워드 선택 시 실제 지역 기반 음식점 정보 수집 및 정렬
 - 레시피/재료 정보 출력: Spoonacular API + 한글 번역 딕셔너리로 재료 정보 제공 예정
-- Redis 캐시 활용: emotion:{감정} / store:{음식} 캐시 TTL 10분 → 빠른 응답 및 서버 부하 최소화
 - ERD 설계: N:M 감정 추천 기록, GPT 추천 키워드, 실제 음식점 매핑까지 모두 정규화 설계
  
 **성과**:  
 - GPT + 크롤링 API + DB 저장 + 캐싱까지 엔드투엔드 구성
 - 비공식 경로 분석 및 요청 파라미터 추적을 통해 실서비스 데이터 수집 성공  
-- Redis 캐시 TTL 설계 및 장애 대응 경험 확보 (메모리 누수/중복 재처리 이슈 해결)
-🔗 [GitHub Repository](https://github.com/feed-mina/gomgom-ai)
+- 🔗 [GitHub Repository](https://github.com/feed-mina/gomgom-ai)
 
 
 ---
