@@ -1,253 +1,88 @@
-# 민예린 (Min Yerin)
+# 👋 Hello! I'm Yerin Min 
+> **운영의 문제에서 핑계를 찾기 전에 아키텍처 설계로 해결해 내는 백엔드 개척자** 
 
-#### 📧 Email: myelin24@naver.com  
-#### GitHub: [https://github.com/feed-mina](https://github.com/feed-mina)  
-#### Portfolio1: [https://justsaying.co.kr](https://justsaying.co.kr)
-#### Portfolio2: [https://mindevprofile.kr](https://mindevprofile.kr)
-
----
-
-# 📑 목차
+💼 **Fullstack Web / Backend Developer** 
+🏠 **Base:** Seoul, South Korea
+📧 **Contact:** dbdlstltm94@gmail.com
+📝 **Portfolio & Blog:** [GitHub Pages / Portfolio URL 삽입 요망] 
 
 ---
 
-# 👩‍💻 About Me
+## 🚀 Why Yerin? (나의 개발 철학)
 
-- 이름: 민예린 (閔叡隣 MIN YERIN)  
-- 생년월일: 1994.07.15  
-- 이메일: myelin24@naver.com  
-- 휴대폰: 010-4641-2537  
-- 학력:  
-  - 동덕여자고등학교 (2010.03 ~ 2013.02)  
-  - 한성대학교 행정학 전공, 경제학 부전공 (2014.03 ~ 2020.02) / GPA 3.36 / 4.5 
+과거 데이터(통계)를 분석하던 마케팅의 영역에서 확장하여, 시스템을 설계하고 제어하여 사용자에게 실질적 통계와 성과를 쥐여주는 **백엔드 엔지니어링**으로 넘어온 문제 해결사입니다.
+대규모 트래픽 부하가 발생하는 EBS 파견과, 포스코 DX 정보보안 이메일(DMARC) 테스트 운영 실무 등 **엔터프라이즈 환경에서의 통제와 숲의 흐름**을 배웠고, 이에 안주하지 않고 스스로 **SDUI(서버 주도 UI 엔진)**와 캐싱 인프라 최적화 작업을 리드하며 기술적인 성장을 증명하고 있습니다.
+
+✓ **“레거시 코드는 적이 아닙니다. 개선해야 할 통계일 뿐입니다.”** (Doxygen 역공학 분석 리딩)
+✓ **“단순 구현보다 서버의 안정성과 캐싱, 보안 인가를 더 사랑합니다.”** 
 
 ---
 
-# 🔍 전체 요약
-**#Fullstack  #SpringBoot #FastApi #React #Vue #ProblemSolving**
+## 🛠️ Tech Stack 
 
-- 🌱 콘텐츠 마케팅 (통계분석) → 개발자로 성장 [📖 성장 여정 자세히 보기](./GrowthJourney.md)
-- 🎯 개발구축/운영을 통해 실무 역량 확보  
-- 📌 문제 해결을 중심으로 단순한 구현을 넘어, 기술적 결정의 이유와 맥락을 설명할 수 있는 개발자
-- 🤝 기록을 습관화하여 맥락을 설명 할 수 있는 스킬 
+### ⚙️ Backend & Architecture
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white) 
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-.NET-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
----
+### 💾 Data & DevOps
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) 
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-## 💼 개발자 한 줄 소개
-마치 롤러코스터를 타듯 빠르게 변화하는 흐름 속에서 **꾸준히 준비하는 태도**로 문제를 해결하는 민예린입니다.
-**개발자가 되고 싶은 동기**는 기술로 문제를 해결하는 과정에 매력을 느끼고 꾸준히 공부하고 성장하는 직업이 멋있어서였습니다. 
-
-최근에는 AI 에이전트를 이용해서 사용자 관점에서 문제를 이해하고 Todo리스트 중심으로 해결합니다. 
-**주어진 일에 집중하여 몰입**하고 러닝커브 속도를 높였습니다. 과정 안에 **기록과 피드백**을 통해 한 단계씩 발전하고 있다는걸 느낍니다.
-
-공백기 기간에 기술적 독립성을 갖추고 싶어 **피그마를 통해 웹디자인 기획**부터 **다양한 언어 프레임워크로 웹 서비스를 설계 및 구축**을 해본 경험이 있습니다. 
-
-- **기획**에서 사용자가 편하게 사용 할 수있는 UI/UX는 어떤걸까? 구현하고 싶은 페이지를 잘 표현하는 방법은 무엇일까? 어떻게 사용자들에게 타겟팅을 하고 SEO를 높일 수 있을까? 
-
-- **프론트앤드**에서 랜더링에서  props를 어떻게 관리할까? 상태관리에서 전역/부분 분리를 효율적으로 할 수 있을까, 로직과 렌더링을 어떻게 나누면 좋을까?
-
-- **백앤드** 에서 프론트앤드에게 응답을 어떻게 주면 편할까?  서비스로직에서 SET/LIST/STREAM 와 같이 어떻게 사용하면 좋을까? , 보안/토큰 관리에서 실수 하는 부분은 없을까? 
-
-- **인프라**에서 자동화로 에러가 났을때 해결 할 수 잇는 방법이 있을까,AWS에서 결제비용을 작게 하려면 어떻게 하면 좋을까? 로그수집은 어떻게 하면 잘 활용할 수 있을까?
-를 고민하면서 각각의 과정/분야에서 중요성을 느끼게 되었습니다.
-
-최근에는 보안이슈가 많아지면서 **정보보안**의 중요성을 느끼고 **시큐어 코딩** 및 **ISMS, 스팸 메일 대응**에 관심을 가지게 되었습니다.
-
-주어진 분야에서 풀어야 할 과제에 잘 대처하며 나아가는 사람이 되고 싶습니다.
-
----
-## 🚀 핵심 역량 요약
-
-- **백엔드**  
-  Spring Boot 기반 REST API를 설계하고, JWT 인증과 OAuth2(카카오 로그인)를 구현해 보안성과 확장성을 고려한 인증 시스템을 구축했습니다.
-
-- **프론트엔드**  
-  Vue.js, React.js를 활용한 **단일 페이지 애플리케이션(SPA)**에서 컴포넌트 분리, 상태 관리(ReactQuery, Zustand 등), Axios 인터셉터를 통한 인증 유지 등 실제 사용자 시나리오 중심 UI 구현 경험이 있습니다.
-
-- **FastAPI/Flask**  
-  Flask와 FastAPI 기반으로 경량화된 비동기 API 서버를 구성 , 예를 들면 TTS 기능 구축 및 다국어 처리(i8) 기능을 안정적으로 제공한 경험이 있습니다.
-
-- **MSA 구조 및 캐시 최적화 설계**  
-  Spring Boot와 FastAPI 기반의 마이크로서비스 구성 경험이 있으며 Redis를 활용해 캐싱 구현했습니다.
-
-- **데이터베이스**  
-  MySQL, PostgreSQL을 기반으로 한 ERD 설계, 쿼리 최적화, 대용량 테이블 조인 로직 분석 및 데이터 딕셔너리 구축 경험이 있습니다.
-
-- **실전형 프로젝트 배포**  
-  AWS EC2, S3, CloudFront, Nginx를 기반으로 한 프로젝트 배포 경험이 있으며, HTTPS 설정, CORS 대응 등 경험을 갖추고 있습니다.
-
-- **문제 해결 중심 프로세스 경험**  
-  기획 → 개발 → 테스트 → 배포까지 전체 사이클을 주도하며, 운영 중 발생한 오류(CORS, 인증 누락, 서버 부하 등)를 스스로 분석하고 개선한 실전 경험을 보유하고 있습니다.
----
-
-## 🛠️ 기술 스택 및 활용 경험
-
-| 분야           | 기술 및 툴       | 실무 적용 및 활용 경험         |
-| ------------ | -------------------| ------------------------------- |
-| **프론트엔드**    | Vue 3, React.js  | - 감정 일기, 뽀모도로 UI 구성 및 API 연동<br>- TTS 결과 오디오 재생 기능 구현<br>- SNS 로그인 인증 연동 및 쿠키 처리                           |
-| **백엔드**| Spring Boot (JWT, OAuth2), FastAPI, Django| - JWT 기반 인증 및 refresh 토큰 구조 설계<br>- FastAPI로 TTS·형태소 분석 <br>- Django 기반 GPT 연동 추천  구축   |
-| **AI·NLP**   | OpenAI GPT API, KoNLPy, Google TTS    | - 감정 → 음식 추천 프롬프트 설계<br>- 형태소 분석 + 일본어 번역 → 피드백 오디오(TTS) 생성<br>                              |
-| **데이터베이스**   | MySQL, PostgreSQL | - ERD 설계 및   N\:M  테이블 , JsonB사용                                  |
-| **캐시/세션 관리** | Redis| - 검색어 기반 캐싱<br>- 사용자 로그인 세션 저장<br>- 동일 문장 TTS 요청 시 캐시 재활용                                       |
-| **인프라 및 배포** | AWS EC2, S3, CloudFront, Nginx, Let's Encrypt     | - S3 정적 파일 → CloudFront HTTPS 배포<br>- EC2 내 Spring Boot, FastAPI 서버 운영<br>- Nginx 리버스 프록시 설정 및 HTTPS 인증 적용 |
-| **보안** | ISMS-P 및 DMARC, ANTI-SPAM| - ISMS-P 정책에 걸리는 인증절차 코드 수정, DMARC리포트 작성|
-| **기타 협업/운영** | GitHub, Jira, Slack, Figma   | - 전체 프로젝트 관리 및 디자인 협업<br>- 실시간 피드백 기반 기능 반복 개선|
-
+### 🖥️ Frontend (Fullstack capable)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ---
 
-## 📚 경력 요약
+## 🔥 Featured Projects 
 
-| 회사명               | 기간                | 주요 역할 및 기술 |
-|----------------------|---------------------|-------------------|
-| **에이아이피플스** | 2025.08 ~ 2025.12 | 포스코 DX 사내 EP운영, DMARC 리포트 작성 |
-| **상록에스 / 유인시스**  | 2024.05 ~ 2025.02   | EBS 영어 서비스 운영 및 트래픽 통계 자동화<br>ISMS-P 인증 대응<br>백오피스 유지보수 및 데이터 딕셔너리 구축 |
-| **솔앤드**                | 2023.06 ~ 2024.02   | Spring Security + JWT 기반 카카오 로그인 구현<br>Vue.js 관리자 페이지 SPA 개발<br>권한 분기 처리 및 인증 구조 설계 |
-| **무브인터렉티브**        | 2023.01 ~ 2023.04   | ASP.NET 웹 구조 분석 및 기능 개선<br>MSSQL 테이블 구조 문서화(DB Dictionary)<br>결제 모듈 전환 기획 및 문서화 지원 |
+### 1. SDUI: Server-Driven UI Metadata Engine
+> **"프론트엔드 배포 대기를 혁신하다."** (2026.01 ~ )  
+* UI의 뷰 속성을 DB(`ui_metadata`)로 추상화하여 백엔드에서 렌더링 레이어를 통제하는 엔진 구축 프로젝트.
+* Next.js와 Spring Boot 스택, 컴포넌트 동적 매핑, 그리고 N+1 쿼리 방어 및 **Redis 캐시**를 통한 렌더링 성능 최적화 진행.  
+🔗 **[Repository]** (https://github.com/feed-mina/SDUI)
 
+### 2. JustSaying: Hybrid Auth & Diary System
+> **"보안과 운영의 안정성 테스트베드."** (2025.04 ~ )
+* Spring Boot(Auth/Board)와 FastAPI(AI/NLP)를 논리적으로 분리하고 연동한 MSA 아키텍처 웹.
+* **통합 JWT / 로컬과 카카오 OAuth 2.0 로직 이중화 / Axios Interceptor 보안 구조** 구현.  
+🔗 **[Repository]** (https://github.com/feed-mina/Diary) | ⚠️ *(AWS 운영 종료)*
 
----
-
-# 🎓 교육 이력
-
-| 과정명              | 기간                | 내용                                 | 교육시간 |
-|---------------------|---------------------|------------------------------------|---------|
-| TABA SW 아카데미     | 2022.08 ~ 2022.12    | AI 이미지 예측 공모전 최우수상, Spring/MySQL | 640시간 |
-| IoT/BigData/AI 과정 | 2021.08 ~ 2022.02    | Java 기반 CRUD, Python 데이터 처리  | 960시간 |
-
-- 빅데이터 분석 및 인공지능 처리를 위한 SW융합개발자 양성과정 2022.08.26 ~2022.12.23 (640 시간)_(주)티맥스티베로, 단국대학교, 한국클라우드컴퓨팅연구조합
-
-- 자율주행을 위한 IoT·Bigdata·AI 기술융합 개발자 양성 과정[2022 년 08 월 30 일 ~ 2023 년 03 월 07 일 (960 시간)_엔코아 
+### 3. Click Your Taste! (Gomgom-AI)
+> **"AI 입맛 추천 알고리즘 챗봇 서비스."** (2025.04)
+* OpenAI GPT 기반 감성 처리 서비스 및 지형 인프라(Geolocation) API 결합 추천 앱.
+* 외부 환경의 불안정성을 막기 위한 **httpx(비동기 호출) 통신 설계** 구축.  
+🔗 **[Repository]** (https://github.com/feed-mina/gomgom-ai) | ⚠️ *(AWS 운영 종료)*
 
 ---
 
-# 📘 주요 프로젝트
+## 🤖 AI-Assisted Development & Orchestration
 
-## ① JustSaying – 감정 기반 일기 및 TTS 피드백 서비스
-**📍 URL**: [https://justsaying.co.kr](https://justsaying.co.kr)  
-**🔧 기술 스택**: Vue.js, Spring Boot, FastAPI, AWS EC2/S3/CloudFront, Nginx, HuggingFace API
+단순히 코드를 타이핑하는 것을 넘어, **AI 서브에이전트(Claude Code 등)를 도구로 적극 활용하여 1인 풀스택 개발의 생산성을 극대화**합니다.
 
-**기간**: 2025.03 ~ 진행중
-
-- 백엔드 구조 설계: 인증/일기/기록 API는 Spring Boot, TTS·형태소 분석은 FastAPI로 분리하여 책임 분산
-- JWT 인증 + 쿠키 전달: 자체 JWT 발급 및 Refresh 토큰 Redis 저장으로 인증 구조 안정화
-- TTS/번역 결과 캐싱: 동일 문장 재요청 시 Redis 캐시를 통해 재처리 없이 빠른 피드백 제공
-- 카카오·네이버 OAuth2 로그인: 인가코드 → 액세스토큰 → 사용자 정보 → JWT 생성 흐름 완전 구현
-- Vue UI 구성: 일기장 CRUD, 스탑워치/뽀모도로, TTS 오디오 피드백, 감정 분석 결과 시각화
-
-**성과:**
-- 실시간 감정 분석/음성 피드백 루프 완성 (AI 분석 ↔ UX 반영)
-- Redis TTL 기반 캐시 구조 설계 및 충돌/중복 방지
-- AWS CloudFront + Nginx 리버스 프록시까지 실배포 경험 확보
-  
-[🔗 GitHub Repository](https://github.com/feed-mina/Diary)
+* **Architecture First**: 전체 시스템 다이어그램과 핵심 로직(SDUI 렌더링 트리, MSA 통신 등)의 설계 및 통제권은 제가 직접 쥐고 구성합니다.
+* **AI Delegation (위임)**: 반복적인 UI 보일러플레이트 작성, 복잡한 환경 설정(CSP 정책, CSS 조정 등), 에러 로그 추적 및 단위 디버깅은 AI 모델에게 프롬프트를 통해 위임하여 개발 속도를 40% 이상 단축시킵니다.
+* **Troubleshooting Engine**: 에러 발생 시 구글링에 의존하기보다, 시스템 로그와 아키텍처 맥락을 AI에게 학습시켜 원인을 빠르게 도출하고 제가 최종 리뷰/병합(Merge)하는 파이프라인으로 일합니다.
 
 ---
 
-## ② Gomgom AI – GPT 기반 감정 맞춤 음식 추천 서비스
+## 📈 Experience Roadmap 
 
-**URL**: [https://mindevprofile.kr](https://mindevprofile.kr)  
-**기술 스택**: Django, Vue.js, Redis, PostgreSQL, AWS EC2/Nginx, OpenAI GPT-3.5 API, 요기요 API 활용
-
-**기간**: 2025.04  
-
-- GPT 프롬프트 최적화: 사용자 감정 입력을 GPT 프롬프트로 재구성하여 상황 맞춤 음식 키워드 추천
-- 요기요 비공식 API + 크롤러: 음식 키워드 선택 시 실제 지역 기반 음식점 정보 수집 및 정렬
-- 레시피/재료 정보 출력: Spoonacular API + 한글 번역 딕셔너리로 재료 정보 제공 예정
-- ERD 설계: N:M 감정 추천 기록, GPT 추천 키워드, 실제 음식점 매핑까지 모두 정규화 설계
- 
-**성과**:  
-- GPT + 크롤링 API + DB 저장 + 캐싱까지 엔드투엔드 구성
-- 비공식 경로 분석 및 요청 파라미터 추적을 통해 실서비스 데이터 수집 성공  
-- 🔗 [GitHub Repository](https://github.com/feed-mina/gomgom-ai)
-
+- 💼 **포스코 DX 사내 시스템 파견 / AI Peoples** _(2025.08 - 2025.12)_ - 전사 스팸메일 차단 필터 시스템 운영 및 DMARC 리포트 통계 엔지니어.
+- 💼 **EBS 사내 아키텍처 백오피스 운영 / 유인시스(상록에스)** _(2024.05 - 2024.12)_ - 자동 모니터링 구축(Crontab 환경) 및 ISMS-P 인증 기술 분석. 개인추천서비스 역공학 소스/구조 심도 검토. 
+- 💼 **웹솔루션 B2B 파트 개발 / 솔앤드** _(2023.06 - 2024.02)_ - KT 멤버십, 순천향대학교 공자학당 앱(React, Vue API), Spring Boot 및 JPA 트랜잭션 관리 B2B API 서버/관리자페이지 설계. 등급별 권한 관리(Spring Auth) 도입.
+- 💼 **ASP.NET 역공학 분석 / 무브인터렉티브** _(2023.01 - 2023.04)_ - Doxygen / DB Dictionary 구조 도식화 및 C# 기반 결제 모듈 DB 참조 관계 (FK) 분석.
 
 ---
 
-## ③  TABA1-CCCR  
+### Stats
+[![Yerin's GitHub stats](https://github-readme-stats.vercel.app/api?username=feed-mina&show_icons=true&theme=radical)](https://github.com/feed-mina)
 
-**🔧 기술 스택**: Python, Flask, AI 모델  
-
-**기간**: 2022.12 
-
-- PyTorch를 사용해 CNN 기반 이미지 분류 모델을 설계하고, ImageNet 데이터셋을 전처리하여 학습 최적화를 진행했습니다.
-- GPU 메모리 한계 및 데이터 불균형 문제를 해결하기 위해 Batch Size 조정, 데이터 증강(Augmentation), EarlyStopping 기법을 적극 적용했습니다.
-- 단순 정확도뿐만 아니라 Validation Loss와 Confusion Matrix를 분석해 실제 데이터에서도 안정적인 모델 성능을 검증했습니다.
-- 최종적으로 90% 이상의 정확도를 달성하며, 해당 모델로 TABA1-CCCR AI 공모전에서 최우수상을 수상했습니다.
-
-**성과:**
-
-- 학습 환경 최적화 및 모델 성능 향상을 위한 반복 실험과 개선 경험 확보
-- AI 모델 개발 전 과정(데이터 전처리, 학습, 검증, 튜닝) 직접 수행
-- 공모전 **최우수상 수상**  을 통해 문제 해결력과 꾸준함을 객관적으로 검증
-[🔗 GitHub Repository](https://github.com/feed-mina/TABA1-_CCCR_-)
-
----
-
-## ④ MIMO  
-
-**기술 스택**: React.js, HTML/CSS, JavaScript, Figma, Google Cloud, Firebase
-
-**기간**: 2022.02 
-
-**🧑‍🤝‍🧑 팀 구성**: 7인 (프론트 2, 백엔드 2, 모델링 3)  
-
-- 코로나로 인한 오프라인 테스트 한계를 극복하기 위해 React 기반 가상 메이크업 시뮬레이션 웹앱을 개발했습니다. 웹캠으로 얼굴을 촬영한 후 립스틱 색상을 적용하는 기능과, AI 기반 얼굴 인식 및 립 컬러 매핑 기능을 구현했습니다.
-- OAuth2를 활용한 소셜 로그인, 상품 상세 정보 제공, 장바구니 및 리뷰 작성 기능을 통해 쇼핑몰 연동 기능까지 확장했습니다.
-
-**성과:**
-
-- React 기반 UI/UX 설계 및 클래스형 컴포넌트화 개발 경험
-- 프론트엔드, 백엔드, AI 시스템 연동을 통한 실전 프로젝트 수행
-- 사용자 중심 설계와 반복 피드백을 통한 기능 개선 주도
-
-[🔗 GitHub 보기](https://github.com/feed-mina/MIMO)
-
----
-
-## ⑤ 구로 청년 이룸  
-
-**🔧 기술 스택**: React.js, HTML/CSS, Figma, Google Analytics, Netlify
-**🧑‍🤝‍🧑 팀 구성**: 5인  
-
-**기간**: 2022.04
-
-- 청년 커뮤니티 활성화를 목표로 React 기반 반응형 이벤트 플랫폼 웹사이트를 개발했습니다. 밸런스 게임, 심리 테스트, 일기장, 댓글 기능을 통해 사용자의 몰입도를 높이고, GA 태깅을 통해 사용자 이동 경로 및 클릭 수를 데이터화했습니다.
-- 반응형 모바일 최적화를 고려한 UI/UX 설계와 직접 배포를 진행했습니다.
-
-**성과:**
-
-- 반응형 UI/UX 설계 및 리액트 함수형 컴포넌트 개발경험
-- 사용자 데이터 기반 UX 분석 및 개선 경험 확보, 이벤트 기반 서비스 기획 경험
-- 구로 청년 이룸 프로그램 내 전체 팀 중 1등 수상
-
- [🔗 GitHub 보기](https://github.com/feed-mina/hardcarry2_team3)
-
----
-
-# 🏆 수상 및 자격증
-
-
-| 과정명              | 기간     |
-|---------------------|----------|
-| 정보처리기사 필기 합격| 2026. 01 |
-| TABA AI 공모전 최우수상| 2022.12 |
-| GAIQ  | 2021. 01 | 
-| MOS Master  | 2015. 12 |  
- 
----
-
-## 📈 향후 성장 방향
-    
-- 대규모 트래픽 서비스 운영 경험을 통해 장애 대응, 성능 튜닝, 보안 이슈 대응 등 실무 역량을 강화하고 싶습니다. 특히 Redis, CDN, 로드 밸런서 등 인프라 구성 요소에 대한 이해를 깊이 있게 확장할 계획입니다.
-
-- 오픈소스와 사이드 프로젝트를 병행하며, 기술 블로그와 깃허브 기록을 통해 지식 공유와 아카이빙을 지속해나갈 계획입니다. 단순한 구현을 넘어, 기술적 결정의 이유와 맥락을 설명할 수 있는 개발자가 되고 싶습니다.
-
----
-# ✅ 마무리 및 링크
-> 기술로 문제를 해결하고,편리한 서비스를 제공할 수 있는 개발자가 되겠습니다.
-
-- 📎 전체 GitHub: [github.com/feed-mina](https://github.com/feed-mina)  
-- 🛤️ 성장 스토리: [GrowthJourney.md](./GrowthJourney.md)  
-- Portfolio1: [https://justsaying.co.kr](https://justsaying.co.kr)
-- Portfolio2: [https://mindevprofile.kr](https://mindevprofile.kr)
+💬 **“Talk is cheap. Show me the architecture.”**
