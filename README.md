@@ -4,7 +4,7 @@
 💼 **Fullstack Web / Backend Developer** 
 🏠 **Base:** Seoul, South Korea
 📧 **Contact:** dbdlstltm94@gmail.com
-📝 **Portfolio & Blog:** [GitHub Pages / Portfolio URL 삽입 요망] 
+📝 **Portfolio & Github:** [[GitHub Pages ](https://github.com/feed-mina)/ [Portfolio URL](https://sdui-delta.vercel.app/view/MAIN_PAGE)] 
 
 ---
 
