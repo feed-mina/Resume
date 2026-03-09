@@ -48,6 +48,7 @@
 * UI의 뷰 속성을 DB(`ui_metadata`)로 추상화하여 백엔드에서 렌더링 레이어를 통제하는 엔진 구축 프로젝트.
 * Next.js와 Spring Boot 스택, 컴포넌트 동적 매핑, 그리고 N+1 쿼리 방어 및 **Redis 캐시**를 통한 렌더링 성능 최적화 진행.  
 🔗 **[Repository]** (https://github.com/feed-mina/SDUI)
+🔗 **[product]** (https://sdui-delta.vercel.app/view/MAIN_PAGE)
 
 ### 2. JustSaying: Hybrid Auth & Diary System
 > **"보안과 운영의 안정성 테스트베드."** (2025.04 ~ )
