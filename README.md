@@ -1,5 +1,6 @@
 # 👋 Hello! I'm Yerin Min 
-> **운영의 문제에서 핑계를 찾기 전에 아키텍처 설계로 해결해 내는 백엔드 개척자** 
+> **운영의 문제에서 핑계를 찾기 전에 아키텍처 설계로 해결해 내는 개발자**
+> **AI 검증을 습관화 하고 한번 더 메모하여 정리하는 개발자** 
 
 💼 **Fullstack Web / Backend Developer** 
 🏠 **Base:** Seoul, South Korea
