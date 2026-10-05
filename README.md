@@ -4,7 +4,8 @@
 
 💼 **Fullstack Web / Backend Developer** 
 🏠 **Base:** Seoul, South Korea
-📧 **Contact:** dbdlstltm94@gmail.com
+📧 **Contact:** myelin24@naver.com
+📄 **이력서 PDF:** [요약판 3쪽](resume/resume-yerin-min.pdf) · [전체판 8쪽](resume/resume-yerin-min-full.pdf) — 원본은 `resume/build_resume.py`, 재생성은 `python3 resume/build_resume.py && node resume/render_pdf.mjs`
 📝 **Portfolio & Github:** [Portfolio](https://feed-mina.github.io/) / [GitHub](https://github.com/feed-mina) / [SDUI 데모](https://sdui-delta.vercel.app/view/MAIN_PAGE)
 
 ---
