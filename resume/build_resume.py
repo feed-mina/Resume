@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""이력서 HTML 생성기 (2026-10-05, A12)
+"""이력서 HTML 생성기 (2026-10-05 A12 · 2026-10-06 사이트 문구 정렬)
 
 사실 출처: Resume/README.md · careerHistory.md · docs/resume-facts.md · docs/claim-check.md · 이전 PDF 본문.
 원칙: 측정 기록이 없는 수치(40%·95%·HA 보장·무결성 100%)는 쓰지 않는다. 연락처는 이메일 하나만.
@@ -15,39 +15,44 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 # 데이터
 # ──────────────────────────────────────────────────────────────────────────────
 NAME = "민예린"
-TITLE = "Fullstack Web / Backend Developer"
+TITLE = "Fullstack Developer · Spring Boot · FastAPI · Next.js · AI"
 INTRO = [
-    "웹 화면·API·데이터를 연결하고, 운영 문제를 코드와 기록으로 설명하는 개발자 민예린입니다.",
-    "B2B 웹 개발과 서비스 운영을 경험했고, 개인 프로젝트에서 화면부터 서버·DB·배포까지 구성했습니다.",
+    "현실 데이터를 현장이 보는 화면으로 만들고, AI와 웹 서비스로 연결하는 풀스택 개발자 민예린입니다.",
+    "회사에서는 운영과 B2B 웹을, 개인 프로젝트에서는 SDUI 엔진·비동기 큐·RAG를 만들었습니다. AI 도구는 구현 초안과 디버깅 후보를 만드는 데 쓰고, 설계 결정과 검증은 제가 책임집니다.",
 ]
 META = [("이메일", "myelin24@naver.com"), ("출생", "1994"), ("학력", "한성대학교 행정학과 졸업 (경제학 부전공)"), ("자격", "GAIQ (2021) · MOS Master (2015)"), ("희망연봉", "회사 내규에 따름")]
 LINKS = [
     ("GitHub", "https://github.com/feed-mina"),
     ("포트폴리오", "https://feed-mina.github.io/"),
     ("제조 데이터 · AI 자동화 사례", "https://feed-mina.github.io/manufacturing-ai/"),
+    ("가이드롤 케이스 스터디", "https://feed-mina.github.io/evol-case-study.html"),
     ("KMovement 라이브", "https://yerin.duckdns.org/"),
     ("Planning Harness 데모", "https://harness-meeting-app.kibayerin.workers.dev/"),
     ("SDUI 데모", "https://sdui-delta.vercel.app/view/MAIN_PAGE"),
+    ("Template Kit Studio", "https://sdui-template-kit-productization.pages.dev/studio/"),
 ]
 
 WHY = [
+    ("데이터는 기준부터: 제조 센서 지표는 정의를 먼저 맞춥니다",
+     "가이드롤 생산 모니터링에서 가동 횟수와 가동 시간이 다른 기준으로 계산돼 '가동 0회인데 1.2시간'이 뜨는 모순을 찾았고, "
+     "현장과 '가동 1회'의 정의를 다시 합의해 합산 함수를 하나로 모은 뒤 36일치 화면을 '항상 맞아야 할 규칙'으로 전수 대조하고 계약 테스트 26건으로 고정했습니다. "
+     "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점은 표로 정리하고, 현장 확인이 필요한 항목은 미확정으로 남겼습니다."),
+    ("AI는 근거부터: 사람 승인을 거치는 흐름 안에 둡니다",
+     "AI 기획 루프(Planning Harness)와 회의록 요약 API(work-cycle)에서 밖으로 나가는 동작은 사람이 승인해야 실행되고, 검사에 걸린 결과는 버려 실패해도 흔적을 남기지 않게 했습니다. "
+     "임계값·정확 조건 필터·테스트·근거 기록으로 AI 결과를 검증 가능하게 두는 것을 중요하게 생각합니다."),
     ("운영 문제를 숫자와 기록으로 추적합니다",
      "EBS 운영에서 모니터링 도구와 배치 집계의 수치가 어긋난 원인을 수집 주기·실패 처리·시간대 기준으로 좁혀 보강했고, "
      "포스코DX 파견에서는 스팸 필터 변경을 테스트 서버에서 먼저 돌려 오탐을 확인하고 DMARC·SPF·DKIM 리포트를 주기적으로 점검했습니다."),
-    ("화면부터 서버·DB·배포까지 한 흐름으로 만듭니다",
-     "SDUI에서는 DB의 화면 메타데이터를 Spring Boot가 트리로 바꾸고 Next.js가 재귀 렌더링하는 구조를 구현했고, "
+    ("화면과 기획을 코드가 아니라 데이터로 다룹니다",
+     "SDUI 엔진(DB의 화면 메타데이터를 Spring Boot가 트리로 바꾸고 Next.js가 재귀 렌더링) → Template Kit Studio 편집기(비개발자도 브라우저에서 수정) → Planning Harness 기획 루프까지 같은 규칙으로 이었고, "
      "KMovement에서는 FastAPI·ChromaDB·Celery/Redis 비동기 큐로 검색과 미디어 생성을 분리했습니다."),
-    ("제조 센서 데이터는 정의부터 맞춥니다",
-     "가이드롤 생산 모니터링에서 가동 횟수와 가동 시간이 다른 기준으로 계산돼 '가동 0회인데 1.2시간'이 뜨는 모순을 찾았고, "
-     "가동 정의를 다시 합의해 합산 함수를 하나로 모은 뒤 36일치 화면을 불변식으로 전수 대조했습니다. "
-     "AI 결과도 임계값·정확 조건 필터·테스트·근거 기록으로 검증 가능하게 두는 것을 중요하게 생각합니다."),
 ]
 
 SKILLS = [
     ("Backend", "Java · Spring Boot · Spring Security · Python · FastAPI · C# / ASP.NET"),
     ("Data", "PostgreSQL · MySQL · MSSQL · DuckDB · Cloudflare D1 · Redis · Parquet"),
     ("Manufacturing Data", "센서 사이클·이벤트 JSONL · 시계열 집계 · 지표 정의표 · 불변식 테스트"),
-    ("AI", "RAG (ChromaDB · GraphRAG/Neo4j) · 임베딩 (multilingual-e5) · LLM API (Gemini · OpenAI · Claude) · 승인 게이트 Agent 흐름"),
+    ("AI", "RAG (ChromaDB · GraphRAG/Neo4j) · 임베딩 (multilingual-e5) · LangChain · LangGraph · LLM API (Gemini · OpenAI · Claude · Workers AI) · 승인 게이트 Agent 흐름 · Claude Code 스킬 (AI 협업)"),
     ("Frontend", "React · Next.js · Vue.js · TypeScript · Streamlit"),
     ("Infra", "Docker · Jenkins · GitHub Actions · Cloudflare Workers · GCP · AWS · Linux Shell"),
     ("Verification", "pytest · Vitest · 계약 테스트 · 회귀 테스트 · 원본 데이터 대조 기록"),
@@ -56,13 +61,14 @@ SKILLS = [
 # (기간, 회사, 직함·역할, 한 줄 요약, bullets_full, bullets_short)
 CAREER = [
     ("2026.08 ~ 2026.09", "이볼빅스", "전임연구원 · 웹 개발",
-     "센서 데이터 조회·분석 웹 (FastAPI · React/TypeScript · DuckDB · Docker · Jenkins)",
+     "센서 데이터 조회·분석 웹 (FastAPI · React/TypeScript · DuckDB · Parquet · Docker · Jenkins)",
      ["가이드롤 생산 라인의 센서 노드(속도·진동) 측정값을 조회·분석하는 화면과 API, DB 구조를 구현하고 배포 작업을 수행했습니다.",
-      "가동 횟수와 가동 시간이 서로 다른 기준으로 계산되는 문제를 코드와 문서로 추적해 지표 정의표를 만들고, 합산 함수를 한 곳으로 통일한 뒤 불변식 테스트로 36일치 화면을 대조했습니다.",
-      "대용량 첫 조회 병목(18.0초)을 읽기 구조 개편으로 0.89초까지 줄인 공개 샘플 배포 기록이 있습니다. 당시 기록이며 모든 요청의 성능 보장은 아닙니다.",
-      "관측한 움직임(센서 속도 표본)과 생산 가동이 다른 지표라는 점은 현장 정답 확인이 필요한 항목으로 남겨 두었습니다."],
-     ["가동 횟수·가동 시간의 정의 차이를 추적해 지표 정의표와 불변식 테스트로 36일치 화면 대조",
-      "대용량 첫 조회 18.0초 → 0.89초 (공개 샘플 배포 기록)"]),
+      "통계 화면에서 가동 시간과 가동 횟수가 서로 맞지 않던 문제를, 현장과 '가동'의 기준을 다시 정해 해결했습니다. 합산 함수를 한 곳으로 통일한 뒤 36일치 화면을 '항상 맞아야 할 규칙'으로 전수 대조(위반 0건)하고 계약 테스트 26건으로 고정했습니다.",
+      "대용량 첫 조회 병목(18.0초)을 DuckDB 연결 1회화와 Parquet 병합 사본으로 0.89초까지 줄인(95% 단축) 공개 샘플 배포 기록이 있습니다. 당시 기록이며 모든 요청의 성능 보장은 아닙니다.",
+      "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점을 표로 정리하고, 현장 정답 확인이 필요한 항목은 미확정으로 남겨 두었습니다."],
+     ["가동 시간·가동 횟수가 맞지 않던 문제를 현장과 '가동' 기준을 다시 정해 해결 — 36일치 화면 전수 대조, 계약 테스트 26건으로 고정",
+      "첫 조회 18.0초 → 0.89초 (95% 단축, 공개 샘플 배포 기록)",
+      "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점을 표로 정리, 현장 확인 항목은 미확정으로 남김"]),
     ("2025.08 ~ 2026.01", "에이아이피플스 (포스코DX 파견)", "사원 · 웹 개발·운영",
      "전사 스팸메일 차단 필터 운영 · DMARC 리포트 통계",
      ["포스코DX 이메일 스팸 필터링 로직 운영을 맡았습니다. 사내에 RAG·LangChain 기반 GPT 구축이 도입되면서 필터링 로직이 고도화되는 과정을 직접 겪었습니다.",
@@ -139,9 +145,9 @@ PROJECTS = [
      ["센서 노드 4대가 10분마다 측정한 속도·진동 사이클을 일간·주간·월간 화면으로 보여 주는 모니터링 시스템입니다.",
       "한 주 통계에 '가동 1.2시간'과 '가동 0회'가 함께 떠서 원인을 코드 세 지점으로 좁혔습니다. 노드 카드·기간 통계·상태 분류가 서로 다른 가동 기준을 쓰고 있었습니다.",
       "'가동 1회'의 정의를 현장과 다시 합의하고 합산 함수를 하나로 모은 뒤, '0회면 0시간'·'주간 합 = 전체' 같은 불변식으로 36일치 화면을 전수 대조했습니다(위반 0건, 계약 테스트 26건).",
-      "대용량 첫 조회 18.0초 → 9.1초 → 0.89초로 줄인 읽기 구조 개편 기록이 있습니다."],
+      "대용량 첫 조회 18.0초 → 9.1초 → 0.89초(95% 단축)로 줄인 읽기 구조 개편 기록이 있습니다. 최적화 전·후 화면 데이터 8/8 동일."],
      "포트폴리오에는 공개 샘플 데이터와 샘플 화면만 썼고, 고객사명·운영 원자료는 싣지 않았습니다. 정지 중 진동으로 속도가 튀는 '유령 속도'는 가설 검증까지만 했고 임계값은 미정입니다.",
-     [("Case Study", "https://feed-mina.github.io/evol-case-study.html")]),
+     [("Case Study", "https://feed-mina.github.io/evol-case-study.html"), ("제조 × AI 사례 한 장", "https://feed-mina.github.io/manufacturing-ai/")]),
     ("KMovement 3.0 — 의미 검색 + 관계 기반 검색 여행 추천",
      "2026.03 ~ · 개인 프로젝트 · AI 파이프라인 설계 · 백엔드/풀스택",
      "FastAPI · Spring Boot · Next.js · PostgreSQL/PostGIS · ChromaDB (multilingual-e5-small) · Neo4j GraphRAG · Celery/Redis · MLflow · GCP",
@@ -150,20 +156,22 @@ PROJECTS = [
       "영상·음성 생성처럼 무거운 작업은 Celery·Redis 큐로 API 응답과 분리했고, 사진 분석 결과에 따라 영상 생성·3D 패닝·뼈대 애니메이션 중 호출 모델을 나눕니다."],
      "추천 정답성과 비용 개선은 별도 평가가 필요한 상태입니다. 지역 불일치 회귀 테스트와 무자료 응답 정책은 검증 뒤에 추가합니다.",
      [("Repository", "https://github.com/feed-mina/KMovement"), ("Live", "https://yerin.duckdns.org/")]),
-    ("SDUI — 서버 주도 UI 메타데이터 엔진",
+    ("SDUI — 서버 주도 UI 메타데이터 엔진 · Template Kit Studio 편집기",
      "2026.01 ~ · 개인 프로젝트 · 코어 로직·아키텍처",
-     "Spring Boot · PostgreSQL · JWT · OAuth 2.0 · Next.js (App Router) · TypeScript · Vercel · AWS EC2 · GitHub Actions",
-     ["ui_metadata 테이블의 화면 정보를 Spring Boot가 JSON UI 트리로 변환하고 Next.js DynamicEngine이 재귀 렌더링하는 구조를 구현했습니다.",
-      "DB 행을 바꾸면 다음 UI 트리 요청에 반영되어 클라이언트 재배포 없이 화면 구성을 바꿀 수 있습니다. 사용자 등급별로 UI와 기능을 나누는 권한 제어를 넣었습니다."],
+     "Spring Boot · PostgreSQL · JWT · OAuth 2.0 · Next.js (App Router) · TypeScript · Vercel · AWS EC2 · GitHub Actions · Cloudflare Pages · Tauri",
+     ["ui_metadata 테이블의 화면 정보를 Spring Boot가 JSON UI 트리로 변환하고 Next.js DynamicEngine이 재귀 렌더링하는 구조를 구현했습니다. DB 행을 바꾸면 다음 UI 트리 요청에 반영되어 클라이언트 재배포 없이 화면 구성이 바뀝니다.",
+      "Template Kit Studio: 그 화면 데이터(템플릿 manifest)를 개발자가 아니어도 브라우저에서 고치는 편집기입니다. CLI · Studio Web · Desktop(Tauri) · 게시된 정적 페이지가 같은 검증기와 플러그인 계약을 공유합니다.",
+      "사용자 등급별로 UI와 기능을 나누는 권한 제어를 넣었습니다."],
      "현재 UI 트리 조회는 PostgreSQL을 직접 사용합니다. Redis TTL 캐시 코드는 호출 경로에 연결돼 있지 않아 성과로 적지 않습니다.",
-     [("Repository", "https://github.com/feed-mina/SDUI"), ("Demo", "https://sdui-delta.vercel.app/view/MAIN_PAGE")]),
+     [("Repository", "https://github.com/feed-mina/SDUI"), ("Demo", "https://sdui-delta.vercel.app/view/MAIN_PAGE"), ("Studio", "https://sdui-template-kit-productization.pages.dev/studio/")]),
     ("Planning Harness · work-cycle — 승인 게이트가 있는 AI 기획 루프와 업무 사이클 도구",
      "2026.06 ~ · 개인 프로젝트 · Cloudflare Workers · D1",
      "Cloudflare Workers · Hono · D1 · Workers AI · Gemini · GitHub API · Claude Code 플러그인",
      ["Planning Harness: 스킬 7개로 기획 산출물 생성 흐름을 고정하고, GitHub 이슈·프로젝트에 쓰는 작업은 dry-run과 사람 승인을 거칩니다. 승인 전 외부 작업 0건.",
-      "work-cycle: 회의록 → AI 요약 → 검증 기록 → 칸반 → GitHub 이슈 → 회고의 하루 사이클. 요청 원문은 저장하지 않고 생성된 회의록만 D1에 남기며, 검증 표(항목·계산식·방법·결과·상태)는 사람이 적어야 그날이 닫힙니다."],
+      "work-cycle: 회의록 → AI 요약 → 검증 기록 → 칸반 → GitHub 이슈 → 회고의 하루 사이클. AI 요약이 검사에 걸리면 버려서 실패해도 흔적 0건이고, 요청 원문은 저장하지 않고 생성된 회의록만 D1에 남기며, 검증 표(항목·계산식·방법·결과·상태)는 사람이 적어야 그날이 닫힙니다."],
      "공개 저장소는 회사 데이터를 뺀 사본입니다. 임베딩·벡터 검색은 쓰지 않습니다(회의 한 건 요약이라 검색 대상이 없음).",
      [("Live Demo", "https://harness-meeting-app.kibayerin.workers.dev/"),
+      ("설명 페이지", "https://feed-mina.github.io/planning-harness.html"),
       ("planning-harness-portfolio", "https://github.com/feed-mina/planning-harness-portfolio"),
       ("work-cycle-portfolio", "https://github.com/feed-mina/work-cycle-portfolio")]),
     ("Gomgom-AI — GPT 기반 심리 맞춤 음식 추천",
@@ -308,17 +316,17 @@ def page(title, body, fs, h3, small, sec_gap, gap):
 SMALL = 9.2
 
 def build_short():
-    global SMALL; SMALL = 10.2
+    global SMALL; SMALL = 9.7
     body = header()
     body += sec("핵심", why())
     body += sec("기술", skills())
     body += sec("경력 (개발 2년 7개월 · 기획 11개월)", career(short=True))
     body += sec("핵심 프로젝트", projects(short=True))
     body += sec("교육", training(short=True))
-    return page("요약판 (3쪽)", body, fs=11.2, h3=12.0, small=SMALL, sec_gap=18, gap=11)
+    return page("요약판 (3쪽)", body, fs=10.7, h3=11.6, small=SMALL, sec_gap=14, gap=9)
 
 def build_full():
-    global SMALL; SMALL = 9.9
+    global SMALL; SMALL = 9.6
     body = header()
     body += sec("핵심", why())
     body += sec("기술", skills())
@@ -328,7 +336,7 @@ def build_full():
     body += sec("자격", certs())
     body += sec("프로젝트", projects(short=False), "pb")
     body += sec("자기소개서", essays(), "pb")
-    return page("전체판 (8쪽)", body, fs=10.9, h3=11.8, small=SMALL, sec_gap=18, gap=11)
+    return page("전체판 (8쪽)", body, fs=10.5, h3=11.5, small=SMALL, sec_gap=15, gap=9)
 
 if __name__ == "__main__":
     for name, fn in [("resume-short.html", build_short), ("resume-full.html", build_full)]:
