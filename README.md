@@ -1,12 +1,12 @@
 # 👋 Hello! I'm Yerin Min 
-> **웹 화면·API·데이터를 연결하고, 운영 문제를 코드와 기록으로 설명하는 개발자 민예린입니다.**
-> **B2B 웹 개발과 서비스 운영을 경험했고, 개인 프로젝트에서 화면부터 서버·DB·배포까지 구성했습니다.**
+> **현실 데이터를 현장이 보는 화면으로 만들고, AI와 웹 서비스로 연결하는 풀스택 개발자 민예린입니다.**
+> **회사에서는 운영과 B2B 웹을, 개인 프로젝트에서는 SDUI 엔진·비동기 큐·RAG를 만들었습니다. AI 도구는 구현 초안과 디버깅 후보를 만드는 데 쓰고, 설계 결정과 검증은 제가 책임집니다.**
 
-💼 **Fullstack Web / Backend Developer** 
+💼 **Fullstack Developer · Spring Boot · FastAPI · Next.js · AI** 
 🏠 **Base:** Seoul, South Korea
 📧 **Contact:** myelin24@naver.com
 📄 **이력서 PDF:** [요약판 3쪽](resume/resume-yerin-min.pdf) · [전체판 8쪽](resume/resume-yerin-min-full.pdf) — 원본은 `resume/build_resume.py`, 재생성은 `python3 resume/build_resume.py && node resume/render_pdf.mjs`
-📝 **Portfolio & Github:** [Portfolio](https://feed-mina.github.io/) / [GitHub](https://github.com/feed-mina) / [SDUI 데모](https://sdui-delta.vercel.app/view/MAIN_PAGE)
+📝 **Portfolio & Github:** [Portfolio](https://feed-mina.github.io/) / [GitHub](https://github.com/feed-mina) / [제조 × AI 사례](https://feed-mina.github.io/manufacturing-ai/) / [SDUI 데모](https://sdui-delta.vercel.app/view/MAIN_PAGE)
 
 ---
 
@@ -46,7 +46,15 @@ EBS 파견 운영, 포스코 DX 메일 보안(DMARC) 테스트 운영, B2B 웹 �
 
 ## 🔥 Featured Projects 
 
-### 1. KMovement 3.0: 의미 검색 + 관계 기반 검색 여행 추천 (대표)
+### 0. 가이드롤 생산 모니터링: 제조 지표 정의 재합의와 '항상 맞아야 할 규칙' 검증 (대표 · 회사 프로젝트)
+> **"데이터는 기준부터, AI는 근거부터."** (2026.08 ~ 2026.09 · 이볼빅스)  
+* 센서 노드 4대가 10분마다 측정한 속도·진동 사이클을 일간·주간·월간 화면으로 보여 주는 FastAPI · React · DuckDB 모니터링 시스템.
+* 한 주 통계에 '가동 1.2시간'과 '가동 0회'가 함께 뜨던 모순을 찾아 현장과 '가동 1회'의 정의를 다시 합의하고 합산 함수를 하나로 통일. 36일치 화면을 '항상 맞아야 할 규칙'으로 전수 대조(위반 0건), 계약 테스트 26건으로 고정.
+* 첫 조회 18.0초 → 0.89초(95% 단축) 공개 샘플 배포 기록. 정지 중 '유령 속도'는 가설 검증까지만 했고 임계값은 **미정**.  
+🔗 **[Case Study]** (https://feed-mina.github.io/evol-case-study.html)
+🔗 **[제조 × AI 사례 한 장]** (https://feed-mina.github.io/manufacturing-ai/)
+
+### 1. KMovement 3.0: 의미 검색 + 관계 기반 검색 여행 추천
 > **"지역 같은 정확 조건과 의미 검색을 분리해서 다룹니다."** (2026.03 ~ )  
 * 장소 설명의 의미 검색(multilingual-e5-small + ChromaDB)과 관계 기반 검색(Neo4j GraphRAG)을 결합한 K-Culture 여행 추천 프로젝트. FastAPI · PostGIS · Celery/Redis 비동기 큐 · MLflow 기록.
 * 지역 같은 정확 조건, 검색 점수의 의미(QA 경로 distance ≤ 0.25), 근거가 없을 때의 응답을 **경로별로 구분**합니다. 무거운 영상·음성 생성은 비동기 큐로 API 응답과 분리했습니다.
@@ -57,9 +65,11 @@ EBS 파견 운영, 포스코 DX 메일 보안(DMARC) 테스트 운영, B2B 웹 �
 ### 2. SDUI: Server-Driven UI Metadata Engine
 > **"DB row를 바꾸면 다음 UI 트리 요청에 반영됩니다."** (2026.01 ~ )  
 * `ui_metadata`의 화면 정보를 Spring Boot에서 트리로 변환하고 Next.js DynamicEngine에서 재귀 렌더링하는 구조를 구현.
-* DB 변경은 다음 UI 트리 요청에 반영되며, 현재 UI 트리 조회는 **PostgreSQL을 직접 사용**합니다. (Redis TTL 코드는 호출 경로에 미연결)  
+* DB 변경은 다음 UI 트리 요청에 반영되며, 현재 UI 트리 조회는 **PostgreSQL을 직접 사용**합니다. (Redis TTL 코드는 호출 경로에 미연결)
+* Template Kit Studio: 그 화면 데이터를 개발자가 아니어도 브라우저에서 고치는 편집기. 엔진 → 편집기 → Planning Harness 기획 루프가 "화면과 기획을 코드가 아니라 데이터로 다룬다"는 한 규칙을 공유.  
 🔗 **[Repository]** (https://github.com/feed-mina/SDUI)
 🔗 **[product]** (https://sdui-delta.vercel.app/view/MAIN_PAGE)
+🔗 **[Studio]** (https://sdui-template-kit-productization.pages.dev/studio/)
 
 ### 3. JustSaying: Hybrid Auth & Diary System
 > **"보안과 운영의 안정성 테스트베드."** (2025.04 ~ )
