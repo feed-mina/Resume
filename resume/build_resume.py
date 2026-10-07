@@ -4,7 +4,7 @@
 사실 출처: Resume/README.md · careerHistory.md · docs/resume-facts.md · docs/claim-check.md · 이전 PDF 본문.
 원칙: 측정 기록이 없는 수치(40%·95%·HA 보장·무결성 100%)는 쓰지 않는다. 연락처는 이메일 하나만.
 
-실행:  python3 resume/build_resume.py   → resume/resume-short.html (요약판 3쪽), resume/resume-full.html (전체판 8쪽)
+실행:  python3 resume/build_resume.py   → resume/resume-short.html (요약판 3쪽), resume/resume-full.html (전체판 7쪽)
 PDF:   node resume/render_pdf.mjs       → resume/resume-yerin-min.pdf (short), resume/resume-yerin-min-full.pdf (full)
 """
 import html, os
@@ -27,15 +27,14 @@ LINKS = [
     ("제조 데이터 · AI 자동화 사례", "https://feed-mina.github.io/manufacturing-ai/"),
     ("가이드롤 케이스 스터디", "https://feed-mina.github.io/evol-case-study.html"),
     ("KMovement 라이브", "https://yerin.duckdns.org/"),
-    ("Planning Harness 데모", "https://harness-meeting-app.kibayerin.workers.dev/"),
-    ("SDUI 데모", "https://sdui-delta.vercel.app/view/MAIN_PAGE"),
+    ("work-cycle 공개 데모", "https://work-cycle-portfolio.evolvix.workers.dev/"),
     ("Template Kit Studio", "https://sdui-template-kit-productization.pages.dev/studio/"),
 ]
 
 WHY = [
     ("데이터는 기준부터: 제조 센서 지표는 정의를 먼저 맞춥니다",
      "가이드롤 생산 모니터링에서 가동 횟수와 가동 시간이 다른 기준으로 계산돼 '가동 0회인데 1.2시간'이 뜨는 모순을 찾았고, "
-     "현장과 '가동 1회'의 정의를 다시 합의해 합산 함수를 하나로 모은 뒤 36일치 화면을 '항상 맞아야 할 규칙'으로 전수 대조하고 계약 테스트 26건으로 고정했습니다. "
+     "재합의안을 올려 회의에서 가동 기준을 확정하고 합산 함수를 하나로 모은 뒤 36일치 화면을 '항상 맞아야 할 규칙'으로 재계산해 대조하고 계약 테스트 26건으로 고정했습니다. "
      "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점은 표로 정리하고, 현장 확인이 필요한 항목은 미확정으로 남겼습니다."),
     ("AI는 근거부터: 사람 승인을 거치는 흐름 안에 둡니다",
      "AI 기획 루프(Planning Harness)와 회의록 요약 API(work-cycle)에서 밖으로 나가는 동작은 사람이 승인해야 실행되고, 검사에 걸린 결과는 버려 실패해도 흔적을 남기지 않게 했습니다. "
@@ -63,41 +62,38 @@ CAREER = [
     ("2026.08 ~ 2026.09", "이볼빅스", "전임연구원 · 웹 개발",
      "센서 데이터 조회·분석 웹 (FastAPI · React/TypeScript · DuckDB · Parquet · Docker · Jenkins)",
      ["가이드롤 생산 라인의 센서 노드(속도·진동) 측정값을 조회·분석하는 화면과 API, DB 구조를 구현하고 배포 작업을 수행했습니다.",
-      "통계 화면에서 가동 시간과 가동 횟수가 서로 맞지 않던 문제를, 현장과 '가동'의 기준을 다시 정해 해결했습니다. 합산 함수를 한 곳으로 통일한 뒤 36일치 화면을 '항상 맞아야 할 규칙'으로 전수 대조(위반 0건)하고 계약 테스트 26건으로 고정했습니다.",
-      "대용량 첫 조회 병목(18.0초)을 DuckDB 연결 1회화와 Parquet 병합 사본으로 0.89초까지 줄인(95% 단축) 공개 샘플 배포 기록이 있습니다. 당시 기록이며 모든 요청의 성능 보장은 아닙니다.",
-      "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점을 표로 정리하고, 현장 정답 확인이 필요한 항목은 미확정으로 남겨 두었습니다."],
-     ["가동 시간·가동 횟수가 맞지 않던 문제를 현장과 '가동' 기준을 다시 정해 해결 — 36일치 화면 전수 대조, 계약 테스트 26건으로 고정",
-      "첫 조회 18.0초 → 0.89초 (95% 단축, 공개 샘플 배포 기록)",
-      "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점을 표로 정리, 현장 확인 항목은 미확정으로 남김"]),
+      "통계 화면에서 가동 시간과 가동 횟수가 서로 맞지 않는 문제를 찾아 원인(세 곳이 다른 가동 기준 사용)을 정리하고, 재합의안을 올려 9월 14일 회의에서 가동 4조건을 확정했습니다. 합산 함수를 한 곳으로 통일한 뒤 36일치 화면을 '항상 맞아야 할 규칙'으로 재계산해 대조(위반 0건)하고 계약 테스트 26건으로 고정했습니다.",
+      "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점을 지표 정의표로 정리하고, 현장 확인이 필요한 항목(속도 환산식·노드-롤 매핑·진동 임계값)은 미확정으로 남겨 두었습니다."],
+     ["가동 시간·횟수 불일치 → 재합의안 작성, 9/14 회의에서 가동 4조건 확정 · 36일치 재계산 대조 · 계약 테스트 26건",
+      "센서 움직임과 생산 가동이 다른 지표라는 점을 정의표로 정리, 현장 확인 항목은 미확정으로 남김"]),
     ("2025.08 ~ 2026.01", "에이아이피플스 (포스코DX 파견)", "사원 · 웹 개발·운영",
      "전사 스팸메일 차단 필터 운영 · DMARC 리포트 통계",
-     ["포스코DX 이메일 스팸 필터링 로직 운영을 맡았습니다. 사내에 RAG·LangChain 기반 GPT 구축이 도입되면서 필터링 로직이 고도화되는 과정을 직접 겪었습니다.",
-      "변경된 차단 로직을 테스트 서버에서 먼저 실행해 오탐을 검증했고, DMARC·SPF·DKIM 리포트를 모니터링하며 발신 도메인 신뢰도 통계를 주기적으로 확인했습니다."],
-     ["스팸 필터 변경을 테스트 서버에서 선검증, DMARC·SPF·DKIM 리포트 통계 운영"]),
+     ["포스코DX 전사 스팸메일 차단 필터 시스템을 운영했습니다. 변경된 차단 로직은 테스트 서버에서 먼저 실행해 오탐을 확인한 뒤 반영했습니다.",
+      "DMARC·SPF·DKIM 리포트를 모니터링하며 발신 도메인 신뢰도 통계를 주기적으로 확인했습니다."],
+     ["스팸 필터 변경 테스트 서버 선검증 · DMARC·SPF·DKIM 리포트 통계 운영"]),
     ("2024.05 ~ 2025.02", "유인시스 · 상록에스 (EBS 파견)", "계약직 사원 · 개발 운영",
-     "EBS 영어 교육 LMS·백오피스 운영 (Spring Boot · MySQL · Crontab · Whatap · Shell)",
-     ["파견 소속이 바뀌는 과정에서도 인수인계를 이어 가며 LMS와 백오피스를 운영했습니다. 새 학기 강좌 편성 시 어드민 배포와 트래픽·에러 대응을 맡았습니다.",
-      "Crontab으로 트래픽 API 호출과 CSV 저장을 자동화해 일일 보고 수작업을 줄이고, Whatap으로 주간 트렌드를 봤습니다.",
+     "EBS 영어 교육 서비스 운영·통계 (Spring Boot · MySQL · Crontab · Whatap · Shell · Redis · Linux)",
+     ["Crontab으로 트래픽 API 호출과 CSV 저장을 자동화해 일일 보고 수작업을 줄였고, Whatap으로 주간 트렌드를 보며 이상 징후를 확인했습니다.",
       "Whatap과 Crontab 집계 수치가 어긋나는 것을 발견해 수집 주기·실패 대응 로직·시간대 기준을 통일했습니다.",
-      "운영·테스트 DB 100여 개 테이블의 구조와 약어를 정리한 데이터 딕셔너리를 만들었고, 회원가입·로그인 흐름을 분석해 ISMS-P 개인정보 심사 대응 문서를 작성했습니다."],
+      "운영·테스트 DB 100여 개 테이블의 구조와 약어를 정리한 데이터 딕셔너리를 만들었습니다.",
+      "EBS 영어 도메인 분석 문서와 개인화 추천 로직(Xtraxtor) 분석 문서를 작성했습니다."],
      ["Crontab·Whatap 집계 수치 불일치 → 수집 주기·시간대 기준 통일",
-      "DB 100여 개 테이블 데이터 딕셔너리, ISMS-P 대응 문서"]),
+      "DB 100여 개 테이블 데이터 딕셔너리 · 도메인·추천 로직 분석 문서"]),
     ("2023.06 ~ 2024.02", "솔앤드", "대리 · SI 개발",
-     "B2B API 서버·관리자 페이지 (Spring Boot · Spring Security · JWT · OAuth2 · Vue.js · AWS S3)",
-     ["순천향대 공자학당 비대면 학습 관리자 페이지를 구축했습니다. 교수·조교·학생 역할별 글쓰기·접근 권한을 Spring Security와 OAuth2(카카오)로 분리했습니다.",
-      "JPA·MyBatis 혼용 구간에서 트랜잭션 누락과 FK·Not Null 위반으로 정합성이 깨지는 오류를 로그로 추적해 트랜잭션 경계를 다시 잡았습니다.",
+     "B2B 관리자 페이지·인증 (Spring Boot · Spring Security · JWT · OAuth2 · Vue.js · MySQL · AWS S3)",
+     ["순천향대 공자학당 비대면 학습 관리자 시스템을 Spring Boot + Vue2로 구축했습니다. 교수·조교·학생 역할별 권한을 분리하고, 웹에서 올린 갤러리를 앱에서 조회하는 연동 기능을 개발했습니다.",
+      "JWT 인증과 OAuth2(카카오) 로그인을 구현하고, Axios 인터셉터로 토큰을 자동 포함시켜 인증 흐름을 단순화했습니다.",
       "KT 멤버십 이벤트 페이지를 S3 정적 호스팅으로 올리고 모바일·PC별 CSP를 적용했습니다. 공자학당 홍보 페이지는 jQuery·Swiper로 빠르게 납기했습니다."],
-     ["역할별 권한(교수·조교·학생) 분리, 트랜잭션 경계 재설정으로 정합성 오류 해결",
+     ["역할별 권한(교수·조교·학생) 분리 · JWT + 카카오 OAuth2 인증",
       "KT 멤버십 이벤트 페이지 S3 호스팅 · CSP 적용"]),
     ("2023.01 ~ 2023.04", "무브인터렉티브", "인턴/수습 · SI 개발",
-     ".NET 레거시 역공학 분석 · DB 딕셔너리 (C# · ASP.NET · MSSQL · Doxygen)",
-     ["문서화되지 않은 C# 결제 시스템을 Doxygen으로 역공학 분석해 클래스 상호작용과 API 명세를 시각화했습니다.",
-      "약어 중심 결제 테이블의 FK 관계를 정리한 DB 딕셔너리를 만들어 결제 취소 시 연쇄 수정 대상을 문서화했고, 외주 개발 범위를 좁히는 기획서 근거로 썼습니다."],
-     ["C# 결제 시스템 Doxygen 역공학 · FK 중심 DB 딕셔너리"]),
+     ".NET 레거시 구조 분석 · DB 딕셔너리 (C# · ASP.NET · MSSQL · Doxygen)",
+     ["문서화되지 않은 C# 결제 시스템을 Doxygen으로 분석해 클래스 구조와 API 명세를 추출하고 구조도로 정리했습니다.",
+      "약어 중심 테이블의 구조와 제약조건을 정리한 DB 딕셔너리를 만들고, 기존 결제 API 호출 흐름을 전수 조사해 외주 개발 범위를 좁히는 기획서 근거로 썼습니다."],
+     ["C# 결제 시스템 Doxygen 분석 · DB 딕셔너리 · 결제 API 흐름 전수 조사"]),
     ("2020.08 ~ 2021.06", "한국뉴먼", "사원 · IT 기획 (프리랜서)",
      "스타트업 창업 지원 솔루션 기획·PM",
-     ["창업 패키지 기획부터 웹 테스트 문서 작성까지 맡아 요구사항 분석과 문서화 습관을 들였습니다.",
-      "클라이언트와 개발자 사이에서 일정·우선순위를 조율하며 소프트웨어 개발의 전체 사이클을 익혔습니다."],
+     ["창업 패키지 기획과 웹 테스트 문서 작성을 맡았고, 클라이언트와 개발자 사이에서 일정·우선순위를 조율했습니다."],
      ["창업 패키지 기획·웹 테스트 문서 · 클라이언트-개발자 일정 조율"]),
 ]
 
@@ -140,12 +136,12 @@ CERTS = [("2021.01", "GAIQ (Google Analytics Individual Qualification)", "Google
 # 프로젝트: (제목, 기간·역할, 기술, bullets, 한계·상태, 링크들)
 PROJECTS = [
     ("가이드롤 생산 모니터링 — 제조 지표 정의 재합의와 불변식 검증",
-     "2026.08 ~ 2026.09 · 회사 프로젝트 · 조회·분석 화면과 API·DB 구조, 배포",
+     "2026.08 ~ 2026.09 회사 프로젝트 · 2026.10 공개 샘플 배포(개인) · 조회·분석 화면과 API·DB 구조, 배포",
      "FastAPI · React/TypeScript · DuckDB · Parquet · Docker · Jenkins · pytest · Vitest",
      ["센서 노드 4대가 10분마다 측정한 속도·진동 사이클을 일간·주간·월간 화면으로 보여 주는 모니터링 시스템입니다.",
       "한 주 통계에 '가동 1.2시간'과 '가동 0회'가 함께 떠서 원인을 코드 세 지점으로 좁혔습니다. 노드 카드·기간 통계·상태 분류가 서로 다른 가동 기준을 쓰고 있었습니다.",
-      "'가동 1회'의 정의를 현장과 다시 합의하고 합산 함수를 하나로 모은 뒤, '0회면 0시간'·'주간 합 = 전체' 같은 불변식으로 36일치 화면을 전수 대조했습니다(위반 0건, 계약 테스트 26건).",
-      "대용량 첫 조회 18.0초 → 9.1초 → 0.89초(95% 단축)로 줄인 읽기 구조 개편 기록이 있습니다. 최적화 전·후 화면 데이터 8/8 동일."],
+      "'가동 1회'의 정의를 재합의안으로 올려 회의에서 확정하고 합산 함수를 하나로 모은 뒤, '0회면 0시간'·'주간 합 = 전체' 같은 불변식으로 36일치 화면을 재계산해 대조했습니다(위반 0건, 계약 테스트 26건).",
+      "퇴사 후 2026-10-02, 공개 샘플 데이터로 VPS에 예시포트폴리오를 배포하며 첫 조회 18.0초 → 0.89초(DuckDB 연결 1회화 + Parquet 병합 사본, 전후 화면 데이터 8/8 동일)를 기록했습니다."],
      "포트폴리오에는 공개 샘플 데이터와 샘플 화면만 썼고, 고객사명·운영 원자료는 싣지 않았습니다. 정지 중 진동으로 속도가 튀는 '유령 속도'는 가설 검증까지만 했고 임계값은 미정입니다.",
      [("Case Study", "https://feed-mina.github.io/evol-case-study.html"), ("제조 × AI 사례 한 장", "https://feed-mina.github.io/manufacturing-ai/")]),
     ("KMovement 3.0 — 의미 검색 + 관계 기반 검색 여행 추천",
@@ -163,14 +159,14 @@ PROJECTS = [
       "Template Kit Studio: 그 화면 데이터(템플릿 manifest)를 개발자가 아니어도 브라우저에서 고치는 편집기입니다. CLI · Studio Web · Desktop(Tauri) · 게시된 정적 페이지가 같은 검증기와 플러그인 계약을 공유합니다.",
       "사용자 등급별로 UI와 기능을 나누는 권한 제어를 넣었습니다."],
      "현재 UI 트리 조회는 PostgreSQL을 직접 사용합니다. Redis TTL 캐시 코드는 호출 경로에 연결돼 있지 않아 성과로 적지 않습니다.",
-     [("Repository", "https://github.com/feed-mina/SDUI"), ("Demo", "https://sdui-delta.vercel.app/view/MAIN_PAGE"), ("Studio", "https://sdui-template-kit-productization.pages.dev/studio/")]),
+     [("Repository", "https://github.com/feed-mina/SDUI"), ("Studio", "https://sdui-template-kit-productization.pages.dev/studio/")]),
     ("Planning Harness · work-cycle — 승인 게이트가 있는 AI 기획 루프와 업무 사이클 도구",
      "2026.06 ~ · 개인 프로젝트 · Cloudflare Workers · D1",
      "Cloudflare Workers · Hono · D1 · Workers AI · Gemini · GitHub API · Claude Code 플러그인",
      ["Planning Harness: 스킬 7개로 기획 산출물 생성 흐름을 고정하고, GitHub 이슈·프로젝트에 쓰는 작업은 dry-run과 사람 승인을 거칩니다. 승인 전 외부 작업 0건.",
       "work-cycle: 회의록 → AI 요약 → 검증 기록 → 칸반 → GitHub 이슈 → 회고의 하루 사이클. AI 요약이 검사에 걸리면 버려서 실패해도 흔적 0건이고, 요청 원문은 저장하지 않고 생성된 회의록만 D1에 남기며, 검증 표(항목·계산식·방법·결과·상태)는 사람이 적어야 그날이 닫힙니다."],
      "공개 저장소는 회사 데이터를 뺀 사본입니다. 임베딩·벡터 검색은 쓰지 않습니다(회의 한 건 요약이라 검색 대상이 없음).",
-     [("Live Demo", "https://harness-meeting-app.kibayerin.workers.dev/"),
+     [("work-cycle 공개 데모", "https://work-cycle-portfolio.evolvix.workers.dev/"),
       ("설명 페이지", "https://feed-mina.github.io/planning-harness.html"),
       ("planning-harness-portfolio", "https://github.com/feed-mina/planning-harness-portfolio"),
       ("work-cycle-portfolio", "https://github.com/feed-mina/work-cycle-portfolio")]),
@@ -311,7 +307,7 @@ def essays():
 def page(title, body, fs, h3, small, sec_gap, gap):
     css = CSS % dict(fs=fs, h3=h3, small=small, sec=sec_gap, gap=gap)
     return f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{e(title)}</title><style>{css}</style></head><body>{body}
-<div class="foot">민예린 이력서 · {e(title)} · 2026-10 · 수치는 공개 기록이 있는 것만 적었습니다 · 최신본 https://feed-mina.github.io/</div></body></html>"""
+<div class="foot">민예린 이력서 · {e(title)} · 2026-10 · 최신본 https://feed-mina.github.io/</div></body></html>"""
 
 SMALL = 9.2
 
@@ -336,7 +332,7 @@ def build_full():
     body += sec("자격", certs())
     body += sec("프로젝트", projects(short=False), "pb")
     body += sec("자기소개서", essays(), "pb")
-    return page("전체판 (8쪽)", body, fs=10.5, h3=11.5, small=SMALL, sec_gap=15, gap=9)
+    return page("전체판 (7쪽)", body, fs=10.5, h3=11.5, small=SMALL, sec_gap=15, gap=9)
 
 if __name__ == "__main__":
     for name, fn in [("resume-short.html", build_short), ("resume-full.html", build_full)]:
