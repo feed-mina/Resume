@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """이력서 HTML 생성기 (2026-10-05 A12 · 2026-10-06 사이트 문구 정렬)
 
-사실 출처: Resume/README.md · careerHistory.md · docs/resume-facts.md · docs/claim-check.md · 이전 PDF 본문.
+사실 출처(2026-11-13 본인 확인: 솔앤드 JSP·jQuery, 에이아이피플스 Oracle 사용): Resume/README.md · careerHistory.md · docs/resume-facts.md · docs/claim-check.md · 이전 PDF 본문.
 원칙: 측정 기록이 없는 수치(40%·95%·HA 보장·무결성 100%)는 쓰지 않는다. 연락처는 이메일 하나만.
 
 실행:  python3 resume/build_resume.py   → resume/resume-short.html (요약판 3쪽), resume/resume-full.html (전체판 7쪽)
@@ -48,11 +48,11 @@ WHY = [
 ]
 
 SKILLS = [
-    ("Backend", "Java · Spring Boot · Spring Security · Python · FastAPI · C# / ASP.NET"),
-    ("Data", "PostgreSQL · MySQL · MSSQL · DuckDB · Cloudflare D1 · Redis · Parquet"),
+    ("Backend", "Java · Spring Boot · Spring Security · JSP · Python · FastAPI · C# / ASP.NET"),
+    ("Data", "PostgreSQL · MySQL · Oracle · MSSQL · DuckDB · Cloudflare D1 · Redis · Parquet"),
     ("Manufacturing Data", "센서 사이클·이벤트 JSONL · 시계열 집계 · 지표 정의표 · 불변식 테스트"),
     ("AI", "RAG (ChromaDB · GraphRAG/Neo4j) · 임베딩 (multilingual-e5) · LangChain · LangGraph · LLM API (Gemini · OpenAI · Claude · Workers AI) · 승인 게이트 Agent 흐름 · Claude Code 스킬 (AI 협업)"),
-    ("Frontend", "React · Next.js · Vue.js · TypeScript · Streamlit"),
+    ("Frontend", "React · Next.js · Vue.js · JSP · jQuery · TypeScript · Streamlit"),
     ("Infra", "Docker · Jenkins · GitHub Actions · Cloudflare Workers · GCP · AWS · Linux Shell"),
     ("Verification", "pytest · Vitest · 계약 테스트 · 회귀 테스트 · 원본 데이터 대조 기록"),
 ]
@@ -67,7 +67,7 @@ CAREER = [
      ["가동 시간·횟수 불일치 → 재합의안 작성, 9/14 회의에서 가동 4조건 확정 · 36일치 재계산 대조 · 계약 테스트 26건",
       "센서 움직임과 생산 가동이 다른 지표라는 점을 정의표로 정리, 현장 확인 항목은 미확정으로 남김"]),
     ("2025.08 ~ 2026.01", "에이아이피플스 (포스코DX 파견)", "사원 · 웹 개발·운영",
-     "전사 스팸메일 차단 필터 운영 · DMARC 리포트 통계",
+     "전사 스팸메일 차단 필터 운영 · DMARC 리포트 통계 (Oracle)",
      ["포스코DX 전사 스팸메일 차단 필터 시스템을 운영했습니다. 변경된 차단 로직은 테스트 서버에서 먼저 실행해 오탐을 확인한 뒤 반영했습니다.",
       "DMARC·SPF·DKIM 리포트를 모니터링하며 발신 도메인 신뢰도 통계를 주기적으로 확인했습니다."],
      ["스팸 필터 변경 테스트 서버 선검증 · DMARC·SPF·DKIM 리포트 통계 운영"]),
@@ -80,7 +80,7 @@ CAREER = [
      ["Crontab·Whatap 집계 수치 불일치 → 수집 주기·시간대 기준 통일",
       "DB 100여 개 테이블 데이터 딕셔너리 · 도메인·추천 로직 분석 문서"]),
     ("2023.06 ~ 2024.02", "솔앤드", "대리 · SI 개발",
-     "B2B 관리자 페이지·인증 (Spring Boot · Spring Security · JWT · OAuth2 · Vue.js · MySQL · AWS S3)",
+     "B2B 관리자 페이지·인증 (Spring Boot · Spring Security · JWT · OAuth2 · Vue.js · JSP · jQuery · MySQL · AWS S3)",
      ["순천향대 공자학당 비대면 학습 관리자 시스템을 Spring Boot + Vue2로 구축했습니다. 교수·조교·학생 역할별 권한을 분리하고, 웹에서 올린 갤러리를 앱에서 조회하는 연동 기능을 개발했습니다.",
       "JWT 인증과 OAuth2(카카오) 로그인을 구현하고, Axios 인터셉터로 토큰을 자동 포함시켜 인증 흐름을 단순화했습니다.",
       "KT 멤버십 이벤트 페이지를 S3 정적 호스팅으로 올리고 모바일·PC별 CSP를 적용했습니다. 공자학당 홍보 페이지는 jQuery·Swiper로 빠르게 납기했습니다."],
