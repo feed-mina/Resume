@@ -66,7 +66,7 @@ CAREER = [
       "센서가 움직인 시간과 실제 생산 가동이 다른 지표라는 점을 지표 정의표로 정리하고, 현장 확인이 필요한 항목(속도 환산식·노드-롤 매핑·진동 임계값)은 미확정으로 남겨 두었습니다."],
      ["가동 시간·횟수 불일치 → 재합의안 작성, 9/14 회의에서 가동 4조건 확정 · 36일치 재계산 대조 · 계약 테스트 26건",
       "센서 움직임과 생산 가동이 다른 지표라는 점을 정의표로 정리, 현장 확인 항목은 미확정으로 남김"]),
-    ("2025.08 ~ 2026.01", "에이아이피플스 (포스코DX 파견)", "사원 · 웹 개발·운영",
+    ("2025.08 ~ 2025.12", "에이아이피플스 (포스코DX 파견)", "사원 · 웹 개발·운영",
      "전사 스팸메일 차단 필터 운영 · DMARC 리포트 통계 (Oracle)",
      ["포스코DX 전사 스팸메일 차단 필터 시스템을 운영했습니다. 변경된 차단 로직은 테스트 서버에서 먼저 실행해 오탐을 확인한 뒤 반영했습니다.",
       "DMARC·SPF·DKIM 리포트를 모니터링하며 발신 도메인 신뢰도 통계를 주기적으로 확인했습니다."],
@@ -316,7 +316,7 @@ def build_short():
     body = header()
     body += sec("핵심", why())
     body += sec("기술", skills())
-    body += sec("경력 (개발 2년 7개월 · 기획 11개월)", career(short=True))
+    body += sec("경력 (개발 2년 6개월 · 기획 11개월)", career(short=True))
     body += sec("핵심 프로젝트", projects(short=True))
     body += sec("교육", training(short=True))
     return page("요약판 (3쪽)", body, fs=10.7, h3=11.6, small=SMALL, sec_gap=14, gap=9)
@@ -326,7 +326,7 @@ def build_full():
     body = header()
     body += sec("핵심", why())
     body += sec("기술", skills())
-    body += sec("경력 (개발 2년 7개월 · 기획 11개월)", career(short=False), "pb")
+    body += sec("경력 (개발 2년 6개월 · 기획 11개월)", career(short=False), "pb")
     body += sec("학력", education())
     body += sec("경험 · 활동 · 교육", training(short=False), "pb")
     body += sec("자격", certs())
